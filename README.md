@@ -1,11 +1,7 @@
-# Data Interview Problems
+# LeetCode Notes
 
-This repo is for training data-related interview questions. Any suggestion is welcome!
+Daily problem solving and practicing on [LeetCode](https://leetcode.com/)
 
-## Credit
+## Daily Progress
 
-Questions are originated from [Data Interview Qs](https://www.interviewqs.com/).
-
-## Log
-
-1. Reddit posts and comments
+- Two Sum, 05-26-2020
