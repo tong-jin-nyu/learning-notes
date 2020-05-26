@@ -4,4 +4,4 @@ Daily problem solving and practicing on [LeetCode](https://leetcode.com/) using 
 
 ## Daily Progress
 
-- Two Sum, 05-26-2020
+- [Two Sum, 05-26-2020](https://github.com/tong-jin-nyu/LeetCode-Notes/blob/master/Python/TwoSum.ipynb)
