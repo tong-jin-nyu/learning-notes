@@ -1,12 +1,12 @@
 # LeetCode Notes
 
-Daily problem solving and practicing on [LeetCode](https://leetcode.com/) using Python 3 and SQL.
+Daily problem solving and practicing on [LeetCode](https://leetcode.com/) using Python 3 and MySQL.
 
 **Start Date:**
 
 05/26/2020
 
-## Daily Progress
+## Algorithm (Python 3)
 
 Format: *Problem Name, Submission Date, Difficulty*
 
@@ -39,3 +39,5 @@ Format: *Problem Name, Submission Date, Difficulty*
 - [Valid Parentheses, 06-02-2020, Easy](https://github.com/tong-jin-nyu/LeetCode-Notes/blob/master/Python%203/006%2020%20Valid%20Parentheses.ipynb)
 
   - Given a string containing just the characters `'('`, `')'`, `'{'`, `'}'`, `'['`, and `']'`, determine if the input string is valid.
+
+## Database (MySQL)
