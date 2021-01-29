@@ -1,6 +1,6 @@
 # LeetCode Notes - SQL
 
-## 176 Combine Two Tables
+## 176 Second Highest Salary
 
 Created on: 01/28/2021
 
