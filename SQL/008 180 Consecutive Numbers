@@ -51,12 +51,6 @@ Result table:
 
 ## Solution (MySQL)
 ```sql
-
-```
-
-## Solution (MS SQL)
-
-``` sql
 SELECT DISTINCT
     l1.Num AS ConsecutiveNums
 FROM 
@@ -68,4 +62,18 @@ WHERE
     AND l2.Id = l3.Id - 1
     AND l1.Num = l2.Num
     AND l2.Num = l3.Num
+```
+
+## Solution (MS SQL)
+
+``` sql
+WITH CTE AS (
+    SELECT Num,
+    LEAD(Num) OVER(ORDER BY Id) AS lead,
+    LAG(Num) OVER(ORDER BY Id) AS lag
+    FROM Logs
+)
+SELECT DISTINCT Num AS ConsecutiveNums
+FROM CTE
+WHERE Num = lead AND Num = lag;
 ```
