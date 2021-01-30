@@ -1,4 +1,4 @@
-# LeetCode Notes
+# LeetCode Exercises
 
 Daily problem solving and practicing on [LeetCode](https://leetcode.com/) using Python 3 and MySQL.
 
