@@ -42,7 +42,7 @@ Should output:
 
 ``` sql
 WITH CTE AS (
-    SELECT class, COUNT(*) AS total
+    SELECT class, COUNT(DISTINCT student) AS total
     FROM courses
     GROUP BY class
 )
