@@ -36,8 +36,4 @@ Format: *Problem Name, Submission Date, Difficulty*
 
   - If there is no common prefix, return an empty string ''.
 
-- [Valid Parentheses, 06-02-2020, Easy](https://github.com/tong-jin-nyu/LeetCode-Notes/blob/master/Python%203/006%2020%20Valid%20Parentheses.ipynb)
-
-  - Given a string containing just the characters `'('`, `')'`, `'{'`, `'}'`, `'['`, and `']'`, determine if the input string is valid.
-
 ## Database (MySQL)
