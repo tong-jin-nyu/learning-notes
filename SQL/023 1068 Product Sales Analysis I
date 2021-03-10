@@ -31,7 +31,7 @@ product_id is a foreign key to Product table.
 Note that the price is per unit.
 ```
 
-Table: Product
+Table: `Product`
 
 ```
 +--------------+---------+
