@@ -1,17 +1,20 @@
 created on: 05/26/2020
 
-updated on: 03/18/2021
+updated on: 03/22/2021
 
-# LeetCode Notes - breakdown and build up
+# LeetCode Notes
+
+## Description
 
 Problem solving and practicing on [LeetCode](https://leetcode.com/) and [力扣](https://leetcode-cn.com/) using Python and SQL.
 
 ## Problems
 
 - [Algorithm](https://github.com/tong-jin-nyu/LeetCode-notes/tree/master/Python%203)
-  - [Wiki]()
+  - [Wiki](https://github.com/tong-jin-nyu/leetcode-notes/wiki/Algorithm)
 
+- [Database](https://github.com/tong-jin-nyu/LeetCode-notes/tree/master/SQL)
+  - [Wiki](https://github.com/tong-jin-nyu/leetcode-notes/wiki/Database)
 
-[Database (SQL)](https://github.com/tong-jin-nyu/LeetCode-notes/tree/master/SQL)
-
-[Analytics](https://github.com/tong-jin-nyu/LeetCode-notes/tree/master/Analytical)
+- [Analytics](https://github.com/tong-jin-nyu/LeetCode-notes/tree/master/Analytical)
+  - [Wiki](https://github.com/tong-jin-nyu/leetcode-notes/wiki/Analytics)
