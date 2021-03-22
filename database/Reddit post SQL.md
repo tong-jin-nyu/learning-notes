@@ -27,7 +27,7 @@ Table: **posts**
 
 Table: **comments**
 
-| Column Name    | Data Type | Description               |
+| ßColumn Name    | Data Type | Description               |
 | -------------- | --------- | ------------------------- |
 | id             | integer   | id of the comment         |
 | author_id      | integer   | id of the commenter       |

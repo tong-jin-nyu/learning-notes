@@ -8,7 +8,9 @@ Problem solving and practicing on [LeetCode](https://leetcode.com/) and [力扣]
 
 ## Problems
 
-[Algorithm (Python)](https://github.com/tong-jin-nyu/LeetCode-notes/tree/master/Python%203)
+- [Algorithm](https://github.com/tong-jin-nyu/LeetCode-notes/tree/master/Python%203)
+  - [Wiki]()
+
 
 [Database (SQL)](https://github.com/tong-jin-nyu/LeetCode-notes/tree/master/SQL)
 
