@@ -4,7 +4,7 @@
 
 Created on: 01/30/2021
 
-Modified on: 01/30/2021
+Modified on: 03/22/2021
 
 ---
 
@@ -21,7 +21,7 @@ Table: `Logs`
 | id          | int     |
 | num         | varchar |
 
-id is the primary key for this table.
+`id is the primary key for this table.`
 
 Write a SQL query to find all numbers that appear at least three times consecutively. 
 
@@ -47,9 +47,9 @@ Result table:
 | --------------- |
 | 1               |
 
-1 is the only number that appears consecutively for at least three times.
+`1 is the only number that appears consecutively for at least three times.`
 
-## Solution (MySQL)
+## Solution 1
 ```sql
 SELECT DISTINCT
     l1.Num AS ConsecutiveNums
@@ -64,7 +64,9 @@ WHERE
     AND l2.Num = l3.Num
 ```
 
-## Solution (MS SQL)
+Self join table three times to include rows with three consecutive repeats. Use `DISTINCT` to get rid of duplicates.
+
+## Solution 2
 
 ``` sql
 WITH CTE AS (
@@ -77,3 +79,12 @@ SELECT DISTINCT Num AS ConsecutiveNums
 FROM CTE
 WHERE Num = lead AND Num = lag;
 ```
+
+Use window function `LEAD()` and `LAG()` to create two columns showing the lead and lag of a row. Filter to rows with same values as their leads and lags.
+
+## Note
+
+- Self join
+- Window function
+  - `LEAD()`
+  - `LAG()`
