@@ -4,7 +4,7 @@
 
 Created on: 01/28/2021
 
-Modified on: 01/28/2021
+Modified on: 03/22/2021
 
 ---
 
@@ -28,7 +28,7 @@ For example, given the above Employee table, the query should return `200` as th
 | ------------------- |
 | 200                 |
 
-## Solution
+## Solution 1
 
 ``` sql
 SELECT MAX(Salary) AS SecondHighestSalary
@@ -36,7 +36,9 @@ FROM Employee
 WHERE Salary != (SELECT MAX(Salary) FROM Employee)
 ```
 
-Alternatively,
+Apply CTE as part of the `WHERE` clause. In the CTE, compute the highest salary. Then, selecting the maximum salary that is not equal to the highest salary gets the second highest salary.
+
+## Solution 2
 
 ``` sql
 SELECT IFNULL(
@@ -48,3 +50,10 @@ SELECT IFNULL(
     NULL
 ) AS SecondHighestSalary
 ```
+
+Apply CTE as part of the `SELECT` clause. In the CTE, sort distinct salary value in descending order. Then, select the second value.
+
+## Notes
+
+- CTE
+- OFFSET

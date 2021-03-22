@@ -4,7 +4,7 @@
 
 Created on: 01/28/2021
 
-Modified on: 01/28/2021
+Modified on: 03/22/2021
 
 ---
 
@@ -51,3 +51,7 @@ FROM Person as p
 LEFT JOIN Address as a
 ON p.PersonId = a.PersonId
 ```
+
+## Notes
+
+- Left join

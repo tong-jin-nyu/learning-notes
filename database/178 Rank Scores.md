@@ -4,7 +4,7 @@
 
 Created on: 01/29/2021
 
-Modified on: 01/29/2021
+Modified on: 03/22/2021
 
 ---
 
@@ -38,7 +38,7 @@ For example, given the above `Scores` table, your query should generate the foll
 
 **Important Note**: For MySQL solutions, to escape reserved words used as column names, you can use an apostrophe before and after the keyword. For example `Rank`.
 
-## Solution (MS SQL)
+## Solution
 
 ``` sql
 SELECT Score,
@@ -46,3 +46,8 @@ DENSE_RANK() OVER(ORDER BY Score DESC) AS RANK
 FROM Scores
 ORDER BY Score DESC;
 ```
+
+## Note
+
+- Window function
+- Difference between `DENSE_RANK()`, `RANK()` and `ROW_NUMBER()`

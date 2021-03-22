@@ -4,7 +4,7 @@
 
 Created on: 01/29/2021
 
-Modified on: 01/29/2021
+Modified on: 03/22/2021
 
 ---
 
@@ -48,3 +48,9 @@ SET N = N-1;
   );
 END
 ```
+
+Similar to Problem 176, this problem asks to get the $n^{th}$ highest salary that is the second highest salary of the $(n - 1)^{th}$ (previous one).
+
+## Note
+
+- Replace OFFSET 1 with $N - 1$
