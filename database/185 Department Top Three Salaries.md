@@ -4,7 +4,7 @@
 
 Created on: 01/30/2021
 
-Modified on: 01/30/2021
+Modified on: 03/22/2021
 
 ---
 
@@ -73,3 +73,10 @@ SELECT
 FROM CTE
 WHERE rank <= 3;
 ```
+
+Similar to Problem 184, in this case, use window function to create a new column, `rank`. The difference is that, in this case, employees in a specific department may take same salary level. Taking this into consideration, we use `DENSE_RANK()` to create a density ranking column.
+
+## Note
+
+- Window function
+  - `DENSE_RANK()`

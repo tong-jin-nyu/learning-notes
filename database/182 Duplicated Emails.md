@@ -4,7 +4,7 @@
 
 Created on: 01/29/2021
 
-Modified on: 01/29/2021
+Modified on: 03/22/2021
 
 ---
 
@@ -38,3 +38,7 @@ FROM Person
 GROUP BY Email
 HAVING COUNT(Email) > 1;
 ```
+
+## Note
+
+- `HAVING` is used for filtering aggregated metrics.

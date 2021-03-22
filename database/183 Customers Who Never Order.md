@@ -4,7 +4,7 @@
 
 Created on: 01/29/2021
 
-Modified on: 01/29/2021
+Modified on: 03/22/2021
 
 ---
 
@@ -51,3 +51,7 @@ WHERE Id NOT IN (
     FROM Orders
 );
 ```
+
+## Note
+
+- CTE as part of the `WHERE` clause

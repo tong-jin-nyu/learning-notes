@@ -4,7 +4,7 @@
 
 Created on: 01/30/2021
 
-Modified on: 01/30/2021
+Modified on: 03/22/2021
 
 ---
 
@@ -52,10 +52,7 @@ WITH CTE AS (
         d.Name AS Department,
         e.Name AS Employee,
         Salary,
-        RANK() OVER(
-            PARTITION BY d.Name
-            ORDER BY Salary DESC
-        ) AS rank
+        RANK() OVER(PARTITION BY d.Name ORDER BY Salary DESC) AS rank
     FROM Employee AS e
     LEFT JOIN Department AS d
     ON e.DepartmentId = d.Id
@@ -68,3 +65,11 @@ SELECT
 FROM CTE
 WHERE rank = 1;
 ```
+
+First, join table together. Then, create a new column, `rank`, using the window function `RANK()`. Finally, select the row where rank equals 1.
+
+## Note
+
+- Window function
+  - `RANK()`
+  - `PARTITION()`
