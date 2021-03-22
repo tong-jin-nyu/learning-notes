@@ -10,11 +10,11 @@ Problem solving and practicing on [LeetCode](https://leetcode.com/) and [力扣]
 
 ## Problems
 
-- [Algorithm](https://github.com/tong-jin-nyu/LeetCode-notes/tree/master/Python%203)
+- [Algorithm](https://github.com/tong-jin-nyu/leetcode-notes/tree/master/algorithm)
   - [Wiki](https://github.com/tong-jin-nyu/leetcode-notes/wiki/Algorithm)
 
-- [Database](https://github.com/tong-jin-nyu/LeetCode-notes/tree/master/SQL)
+- [Database](https://github.com/tong-jin-nyu/LeetCode-notes/tree/master/database)
   - [Wiki](https://github.com/tong-jin-nyu/leetcode-notes/wiki/Database)
 
-- [Analytics](https://github.com/tong-jin-nyu/LeetCode-notes/tree/master/Analytical)
+- [Analytics](https://github.com/tong-jin-nyu/LeetCode-notes/tree/master/analytics)
   - [Wiki](https://github.com/tong-jin-nyu/leetcode-notes/wiki/Analytics)
