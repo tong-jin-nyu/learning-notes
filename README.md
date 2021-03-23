@@ -44,6 +44,8 @@ Problem solving and practicing on [LeetCode](https://leetcode.com/) and [力扣]
 
 - [550 Game Play Analysis IV](https://github.com/tong-jin-nyu/leetcode-notes/blob/master/database/550%20Game%20Play%20Analysis%20IV.md) - CTE as part of `WHERE` and `SELECT`
 
+- [574 Winning Candidate](https://github.com/tong-jin-nyu/leetcode-notes/blob/master/database/574%20Winning%20Candidate.md) - CTE as part of `WHERE`
+
 ### Window function
 
 - [178 Rank Scores](https://github.com/tong-jin-nyu/leetcode-notes/blob/master/database/178%20Rank%20Scores.md) - `DENSE_RANK()`
@@ -70,7 +72,10 @@ Problem solving and practicing on [LeetCode](https://leetcode.com/) and [力扣]
 
 - [570 Managers with at Least 5 Direct Reports](https://github.com/tong-jin-nyu/leetcode-notes/blob/master/database/570%20Managers%20with%20at%20Least%205%20DIrect%20Reports.md) - `HAVING`, `GROUP BY`
 
+- [577 Employeee Bonus](https://github.com/tong-jin-nyu/leetcode-notes/blob/master/database/577%20Employee%20Bonus.md) - `IS NULL`
+
 - [595 Big Countries](https://github.com/tong-jin-nyu/leetcode-notes/blob/master/database/595%20Big%20Countries.md)
+
 
 ## Analytics
 
