@@ -4,7 +4,7 @@
 
 Created on: 03/08/2021
 
-Modified on: 03/08/2021
+Modified on: 03/22/2021
 
 ---
 
@@ -115,10 +115,7 @@ On 2013-10-03:
 ``` sql
 SELECT
     t.Request_at AS Day,
-    CAST(
-        SUM(CASE WHEN t.Status = "completed" THEN 0 ELSE 1 END) / COUNT(*) AS
-        DECIMAL(10, 2)
-    ) AS "Cancellation_Rate"
+    ROUND(AVG(Status <> "completed"), 2) AS "Cancellation Rate"
 FROM Trips AS t
 LEFT JOIN Users AS c
 ON t.Client_Id = c.Users_Id
@@ -130,3 +127,17 @@ WHERE
     t.Request_at BETWEEN "2013-10-01" AND "2013-10-03"
 GROUP BY t.Request_at;
 ```
+
+The key for this question is to calculate the **cancellation rate**. It can be calculated as:
+
+$$
+\text{cancellation rate} = \frac{\text{number of not completed orders}}{\text{total orders}}
+$$
+
+To get this, take the average on those rows whose status is not `completed`.
+
+## Note
+
+- Aggregation
+  - `AVG()`
+- Left join

@@ -4,7 +4,7 @@
 
 Created on: 02/01/2021
 
-Modified on: 02/01/2021
+Modified on: 03/22/2021
 
 ---
 
@@ -22,7 +22,7 @@ Table: `Weather`
 | recordDate    | date    |
 | temperature   | int     |
 
-id is the primary key for this table.
+`id is the primary key for this table.`
 
 This table contains information about the temperature in a certain day.
 
@@ -50,7 +50,7 @@ In 2015-01-02, temperature was higher than the previous day (10 -> 25).
 
 In 2015-01-04, temperature was higher than the previous day (20 -> 30).
 
-## Solution (MS SQL)
+## Solution 1
 
 ``` sql
 SELECT w2.id AS Id
@@ -60,7 +60,9 @@ ON DATEDIFF(day, w1.recordDate, w2.recordDate) = 1
 WHERE w1.Temperature < w2.Temperature;
 ```
 
-Alternatively,
+Apply `DATEDIFF` to link days with their previous ones.
+
+## Solution 2
 
 ``` sql
 WITH cte_sorted AS
@@ -78,3 +80,12 @@ FROM (
 WHERE DATEDIFF(day, date_before, RecordDate) = 1
     AND temp_before < Temperature;
 ```
+
+Apply `ROW_NUMBER()` as indices. Apply `LAG()` to select yesterday.
+
+## Note
+
+- `DATEDIFF`
+- Window function
+  - `ROW_NUMBER()`
+  - `LAG()`
