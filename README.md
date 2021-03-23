@@ -58,11 +58,17 @@ Problem solving and practicing on [LeetCode](https://leetcode.com/) and [力扣]
 
 - [534 Game Play Analysis III](https://github.com/tong-jin-nyu/leetcode-notes/blob/master/database/534%20Game%20Play%20Analysis%20III.md) - `OVER()`, `PARTITION BY`
 
+- [569 Median Employee Salary](https://github.com/tong-jin-nyu/leetcode-notes/blob/master/database/569%20Median%20Employee%20Salary.md) - `ROW_NUMBER()`
+
+- [571 Find Median Given Frequency of Numbers](https://github.com/tong-jin-nyu/leetcode-notes/blob/master/database/571%20Find%20Median%20Given%20Frequency%20of%20Numbers.md) - `SUM()`, `OVER()`
+
 ### Sort and filter
 
 - [182 Duplicated Emails](https://github.com/tong-jin-nyu/leetcode-notes/blob/master/database/182%20Duplicated%20Emails.md) - `HAVING()`
 
 - [511 Game Play Analysis I](https://github.com/tong-jin-nyu/leetcode-notes/blob/master/database/511%20Game%20Play%20Analysis%20I.md) - `GROUP BY`
+
+- [570 Managers with at Least 5 Direct Reports](https://github.com/tong-jin-nyu/leetcode-notes/blob/master/database/570%20Managers%20with%20at%20Least%205%20DIrect%20Reports.md) - `HAVING`, `GROUP BY`
 
 - [595 Big Countries](https://github.com/tong-jin-nyu/leetcode-notes/blob/master/database/595%20Big%20Countries.md)
 
