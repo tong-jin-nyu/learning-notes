@@ -56,7 +56,7 @@ Result table:
 +-----------+-------------+
 ```
 
-## Solution (MS SQL)
+## Solution
 
 ``` sql
 SELECT
