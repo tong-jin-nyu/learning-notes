@@ -1,8 +1,10 @@
+# Others - SQL
+
+## Reddit Post SQL
+
 Created on: 01/25/2021
 
-Modified on: 03/18/2021
-
-# Reddit Post SQL
+Modified on: 03/24/2021
 
 ### Question
 
