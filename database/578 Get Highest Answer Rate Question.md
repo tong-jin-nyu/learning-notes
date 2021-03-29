@@ -23,59 +23,39 @@ Get the highest answer rate question from a table `survey_log` with these column
 - `q_num`: the numeral order of the question in current session.
 - `timestamp`
 
-Table `Employee`
+Write a SQL query to identify the question which has the highest answer rate.
+
+**Example**:
 
 ```
-+-------+--------+-----------+--------+
-| empId |  name  | supervisor| salary |
-+-------+--------+-----------+--------+
-|   1   | John   |  3        | 1000   |
-|   2   | Dan    |  3        | 2000   |
-|   3   | Brad   |  null     | 4000   |
-|   4   | Thomas |  3        | 4000   |
-+-------+--------+-----------+--------+
-
-empId is the primary key column for this table.
+Input:
++------+-----------+--------------+------------+-----------+------------+
+| id   | action    | question_id  | answer_id  | q_num     | timestamp  |
++------+-----------+--------------+------------+-----------+------------+
+| 5    | show      | 285          | null       | 1         | 123        |
+| 5    | answer    | 285          | 124124     | 1         | 124        |
+| 5    | show      | 369          | null       | 2         | 125        |
+| 5    | skip      | 369          | null       | 2         | 126        |
++------+-----------+--------------+------------+-----------+------------+
+Output:
++-------------+
+| survey_log  |
++-------------+
+|    285      |
++-------------+
+Explanation:
+question 285 has answer rate 1/1, while question 369 has 0/1 answer rate, so output 285.
 ```
 
-Table `Bonus`
+**Note**: the highest answer rate meaning is: answer number's ratio in show number in the same question. 
 
-```
-+-------+-------+
-| empId | bonus |
-+-------+-------+
-| 2     | 500   |
-| 4     | 2000  |
-+-------+-------+
-
-empId is the primary key column for this table.
-```
-
-Example ouput:
-
-```
-+-------+-------+
-| name  | bonus |
-+-------+-------+
-| John  | null  |
-| Dan   | 500   |
-| Brad  | null  |
-+-------+-------+
-```
 
 ## Solution
 
 ``` sql
-SELECT
-    name,
-    bonus
-FROM Employee AS e
-LEFT JOIN Bonus AS b
-ON e.empId = b.empId
-WHERE bonus < 1000 OR bonus IS NULL;
+
 ```
 
-Use left join and `WHERE` to get the target values. Consider missing values (for those who do not have any bonus).
 
 ## Note
 
