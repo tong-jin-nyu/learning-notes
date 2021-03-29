@@ -62,7 +62,8 @@ ORDER BY COUNT(answer_id) DESC
 LIMIT 1;
 ```
 
+The key is to transfer the highest answer rate. Getting the highest answer rate is equal to finding the question with highest answers. Therefore, we can count the number of answers in each question and then select the one with most answers.
 
 ## Note
 
-- `IS NULL`
+- Logic
