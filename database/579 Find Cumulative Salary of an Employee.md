@@ -103,6 +103,11 @@ WHERE rnk > 1
 ORDER BY id ASC, month DESC;
 ```
 
+
+
 ## Note
 
-- `IS NULL`
+- Window function
+  - `SUM()`
+  - `OVER()`
+  - `RANK()`
