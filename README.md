@@ -64,6 +64,8 @@ Problem solving and practicing on [LeetCode](https://leetcode.com/) and [力扣]
 
 - [571 Find Median Given Frequency of Numbers](https://github.com/tong-jin-nyu/leetcode-notes/blob/master/database/571%20Find%20Median%20Given%20Frequency%20of%20Numbers.md) - `SUM()`, `OVER()`
 
+- [579 Find Cumulative Salary of an Employee](database/579%20Find%20Cumulative%20Salary%20of%20an%20Employee.md)
+
 ### Sort and filter
 
 - [182 Duplicated Emails](https://github.com/tong-jin-nyu/leetcode-notes/blob/master/database/182%20Duplicated%20Emails.md) - `HAVING()`
@@ -73,6 +75,8 @@ Problem solving and practicing on [LeetCode](https://leetcode.com/) and [力扣]
 - [570 Managers with at Least 5 Direct Reports](https://github.com/tong-jin-nyu/leetcode-notes/blob/master/database/570%20Managers%20with%20at%20Least%205%20DIrect%20Reports.md) - `HAVING`, `GROUP BY`
 
 - [577 Employeee Bonus](https://github.com/tong-jin-nyu/leetcode-notes/blob/master/database/577%20Employee%20Bonus.md) - `IS NULL`
+
+- [578 Get Highest Answer Rate Question](https://github.com/tong-jin-nyu/leetcode-notes/blob/master/database/578%20Get%20Highest%20Answer%20Rate%20Question.md) - logic
 
 - [595 Big Countries](https://github.com/tong-jin-nyu/leetcode-notes/blob/master/database/595%20Big%20Countries.md)
 
