@@ -103,7 +103,7 @@ WHERE rnk > 1
 ORDER BY id ASC, month DESC;
 ```
 
-
+Use window function `SUM()` to acquire the cumulative salary for each `id`. Then, use `RANK()` to assign ranks to the cumulative salary. Finally, use the rank to exclude the most recent month (the row with highest salary for each `id`).
 
 ## Note
 
