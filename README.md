@@ -27,6 +27,7 @@ Problem solving and practicing on [LeetCode](https://leetcode.com/) and [力扣]
 - [181 Employees Earning More Than Their Managers](database/181%20Employees%20Earning%20More%20Than%20Their%20Managers.md) - Left join
 - [196 Delete Duplicate Emails](database/196%20Delete%20Duplicate%20Emails.md) - Self join
 - [262 Trips and Users](database/262%20Trips%20and%20Users.md) - Left join
+- [580 Count Student Number in Departments](database/580%20Count%20Student%20Number%20in%20Departments.md) - Right join
 
 ### CTE
 
