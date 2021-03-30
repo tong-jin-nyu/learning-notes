@@ -48,7 +48,8 @@ Problem solving and practicing on [LeetCode](https://leetcode.com/) and [力扣]
 - [534 Game Play Analysis III](database/534%20Game%20Play%20Analysis%20III.md) - `OVER()`, `PARTITION BY`
 - [569 Median Employee Salary](database/569%20Median%20Employee%20Salary.md) - `ROW_NUMBER()`
 - [571 Find Median Given Frequency of Numbers](database/571%20Find%20Median%20Given%20Frequency%20of%20Numbers.md) - `SUM()`, `OVER()`
-- [579 Find Cumulative Salary of an Employee](database/579%20Find%20Cumulative%20Salary%20of%20an%20Employee.md)
+- [579 Find Cumulative Salary of an Employee](database/579%20Find%20Cumulative%20Salary%20of%20an%20Employee.md) - `SUM()`, `OVER()`, `RANK()`
+- [585 Investments in 2016](database/585%20Investments%20in%202016.md) - `PARTITION BY`
 
 ### Sort and filter
 
