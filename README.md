@@ -60,6 +60,7 @@ Problem solving and practicing on [LeetCode](https://leetcode.com/) and [力扣]
 - [578 Get Highest Answer Rate Question](database/578%20Get%20Highest%20Answer%20Rate%20Question.md) - logic
 - [595 Big Countries](database/595%20Big%20Countries.md)
 - [584 Find Customer Referee](database/584%20Find%20Customer%20Referee.md) - `IS NULL`
+- [586 Customer Placing the Largest Number of Orders](database/586%20Customer%20Placing%20the%20Largest%20Number%20of%20Orders.md)
 
 ## Analytics
 
