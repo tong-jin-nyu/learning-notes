@@ -102,10 +102,3 @@ FROM
     FROM RequestAccepted
     WHERE rnk = 1) AS CTE1
 ```
-
-The key here is that some students may retake courses. Therefore, in the `HAVING` clause, we need to count distinct students. 
-
-### Note
-
-- `COUNT()`
-- `DISTINCT()`
