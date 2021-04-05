@@ -4,7 +4,7 @@
 
 Created on: 04/01/2021
 
-Modified on: 04/01/2021
+Modified on: 04/05/2021
 
 ---
 
@@ -67,11 +67,5 @@ The rows with ids 2 and 3 are not included because we need at least three consec
 
 ```sql
 SELECT
-    COUNT(*)
-FROM
-    (SELECT 
-        *, 
-        ROW_NUMBER() OVER(PARTITION BY requester_id, accepte_id) AS rnk
-    FROM RequestAccepted
-    WHERE rnk = 1) AS CTE1
+  ROW_NUMBER() OVER(PARTITION BY )
 ```
