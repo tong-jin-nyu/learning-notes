@@ -101,3 +101,8 @@ SELECT
             (SELECT COUNT(DISTINCT sender_id, send_to_id)
              FROM FriendRequest), 2), 0.00) AS accept_date;
 ```
+
+## Notes
+
+- `COUNT`
+- `DISTINCT` can be used on multiple variables.
