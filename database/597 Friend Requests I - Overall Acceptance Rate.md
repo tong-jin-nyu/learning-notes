@@ -94,11 +94,10 @@ Could you write a query to return the cumulative acceptance rate for every day?
 
 ```sql
 SELECT
-    COUNT(*)
-FROM
-    (SELECT 
-        *, 
-        ROW_NUMBER() OVER(PARTITION BY requester_id, accepte_id) AS rnk
-    FROM RequestAccepted
-    WHERE rnk = 1) AS CTE1
+    IFNULL(
+        ROUND(
+            (SELECT COUNT(DISTINCT requester_id, accepter_id)
+             FROM RequestAccepted) /
+            (SELECT COUNT(DISTINCT sender_id, send_to_id)
+             FROM FriendRequest), 2), 0.00) AS accept_date;
 ```
