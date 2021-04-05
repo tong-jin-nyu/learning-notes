@@ -63,7 +63,7 @@ Problem solving and practicing on [LeetCode](https://leetcode.com/) and [力扣]
 - [586 Customer Placing the Largest Number of Orders](database/586%20Customer%20Placing%20the%20Largest%20Number%20of%20Orders.md)
 - [596 Classes More Than 5 Students](database/596%20Classes%20More%20Than%205%20Students.md)
 - [597 Friend Requests I: Overall Acceptance Rate]
-(database/597 Friend Requests I - Overall Acceptance Rate.md)
+(database/597%20Friend%20Requests%20I%20-%20Overall%20Acceptance%20Rate.md)
 
 ## Analytics
 
