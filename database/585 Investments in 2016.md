@@ -72,7 +72,7 @@ So, the result is the sum of TIV_2016 of the first and last record, which is 45.
 ``` sql
 SELECT
     SUM(TIV_2016) AS TIV_2016
-FROM 
+FROM
     (
         SELECT
             TIV_2016,
@@ -80,7 +80,7 @@ FROM
             COUNT(PID) OVER(PARTITION BY LAT, LON) AS num_location
         FROM insurance
     ) AS CTE
-WHERE 
+WHERE
     CTE.num_TIV > 1 AND
     CTE.num_location = 1;
 ```
@@ -88,7 +88,7 @@ WHERE
 The key is to partition the data by `TIV_2015` and count number of `PID` with the same `TIV_2015`.
 Then, do the same again for geographic location. Finally, select rows with the same `TIV_2015` value but with different `LAT` and `LON` values.
 
-## Note
+## Notes
 
 - Window function
   - `PARTITION`

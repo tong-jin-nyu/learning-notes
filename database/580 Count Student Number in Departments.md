@@ -14,7 +14,7 @@ Medium
 
 ## Instructions
 
-A university uses 2 data tables, `student` and `department`, to store data about its students and the departments associated with each major. 
+A university uses 2 data tables, `student` and `department`, to store data about its students and the departments associated with each major.
 
 Write a query to print the respective department name and number of students majoring in each department for all departmnets in the `department` table (even ones with no current students).
 
@@ -84,6 +84,6 @@ ORDER BY student_number DESC, dept_name ASC;
 
 The trick is to include departments with no current students. Therefore, use `RIGHT JOIN` on `student` and `department` to include all departments in the `department` table.
 
-## Note
+## Notes
 
 - RIGHT JOIN
