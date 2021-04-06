@@ -67,5 +67,26 @@ The rows with ids 2 and 3 are not included because we need at least three consec
 
 ```sql
 SELECT
-  ROW_NUMBER() OVER(PARTITION BY )
+    DISTINCT s1.*
+FROM Stadium AS s1
+JOIN Stadium AS s2
+JOIN Stadium AS s3
+ON (
+    (s1.id = s2.id - 1 AND s1.id = s3.id - 2) OR
+    (s1.id = s2.id + 1 AND s1.id = s3.id - 1) OR
+    (s1.id = s2.id + 1 AND s1.id = s3.id + 2)
+)
+WHERE
+    s1.people >= 100 AND
+    s2.people >= 100 AND
+    s3.people >= 100
+ORDER BY s1.visit_date ASC;
 ```
+
+## Explanation
+
+The trick here is to link three tables and find at least three consecutive days. To achieve this, we need to join three tables either by `visit_date` or by `id`.
+
+## Notes
+
+- `JOIN`
