@@ -1,6 +1,6 @@
 created on: 05/26/2020
 
-updated on: 04/04/2021
+updated on: 04/05/2021
 
 # LeetCode Notes
 
@@ -28,6 +28,7 @@ Problem solving and practicing on [LeetCode](https://leetcode.com/) and [力扣]
 - [196 Delete Duplicate Emails](database/196%20Delete%20Duplicate%20Emails.md) - Self join
 - [262 Trips and Users](database/262%20Trips%20and%20Users.md) - Left join
 - [580 Count Student Number in Departments](database/580%20Count%20Student%20Number%20in%20Departments.md) - Right join
+- [601 Human Traffic of Stadium](database/601%20Human%20Traffic%20of%20Stadium)
 
 ### CTE
 
