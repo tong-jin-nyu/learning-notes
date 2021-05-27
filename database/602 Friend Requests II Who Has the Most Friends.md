@@ -4,7 +4,7 @@
 
 Created on: 04/05/2021
 
-Modified on: 04/05/2021
+Modified on: 05/27/2021
 
 ---
 
@@ -52,5 +52,27 @@ In the real world, multiple people could have the same most number of friends, c
 ## Solution
 
 ```sql
-
+SELECT id, COUNT(*) AS num
+FROM (
+    (SELECT requester_id AS id
+    FROM request_accepted)
+    UNION ALL
+    (SELECT accepter_id AS id
+    FROM request_accepted)
+) AS CTE
+GROUP BY id
+ORDER BY num DESC
+LIMIT 1;
 ```
+
+## Explanation
+
+The goal is to count distinct ids. Therefore, we need to union two id columns together.
+
+## Follow-up
+
+To find people with most number of friends, we can add a new rank column on the final table that ranks the `num` column. Then, select rows with the top rank.
+
+## Note
+
+- `UNION ALL`

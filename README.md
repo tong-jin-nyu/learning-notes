@@ -1,6 +1,6 @@
 created on: 05/26/2020
 
-updated on: 04/05/2021
+updated on: 05/27/2021
 
 # LeetCode Notes
 
@@ -29,6 +29,7 @@ Problem solving and practicing on [LeetCode](https://leetcode.com/) and [力扣]
 - [262 Trips and Users](database/262%20Trips%20and%20Users.md) - Left join
 - [580 Count Student Number in Departments](database/580%20Count%20Student%20Number%20in%20Departments.md) - Right join
 - [601 Human Traffic of Stadium](database/601%20Human%20Traffic%20of%20Stadium)
+- [602 Friend Requests II: Who Has the Most Friends](database/602%20Friend%20Requests%20II%20Who%20Has%20the%20Most%20Friends.md)
 
 ### CTE
 
@@ -63,7 +64,9 @@ Problem solving and practicing on [LeetCode](https://leetcode.com/) and [力扣]
 - [584 Find Customer Referee](database/584%20Find%20Customer%20Referee.md) - `IS NULL`
 - [586 Customer Placing the Largest Number of Orders](database/586%20Customer%20Placing%20the%20Largest%20Number%20of%20Orders.md)
 - [596 Classes More Than 5 Students](database/596%20Classes%20More%20Than%205%20Students.md)
-- [597 Friend Requests I: Overall Acceptance Rate](database/597%20Friend%20Requests%20I%20-%20Overall%20Acceptance%20Rate.md)
+- [597 Friend Requests I: Overall Acceptance Rate](database/597%20Friend%20Requests%20I%20-%20Overall%20Acceptance%20Rate.md) - `UNION ALL`
+- [608 Tree Node](database/608%20Tree%20Node.md) - `CASE`
+- [613 Shortest Distance in a Line](database/613%20Shortest%20Distance%20in%20a%20Line.md)
 
 ## Analytics
 
