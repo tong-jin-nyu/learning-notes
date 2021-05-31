@@ -19,17 +19,28 @@ Table `point_2d` holds the coordinates (x, y) of some unique points (more than t
 Write a query to find the shortest distance between these points rounded to 2 decimals.
 
 ```
+| x  | y  |
+|----|----|
+| -1 | -1 |
+| 0  | 0  |
+| -1 | -2 |
+```
 
+The shortest distance is 1.00 from point (-1,-1) to (-1,2). So the output should be:
+ 
+```
+| shortest |
+|----------|
+| 1.00     |
 ```
 
 ## Solution (MySQL)
 
 ``` sql
-SELECT (p1.x - p2.x) AS shortest
-FROM 
-    point AS p1,
-    point AS p2
-WHERE p1.x > p2.x
-ORDER BY shortest ASC
-LIMIT 1;
+SELECT 
+    ROUND(
+        MIN(SQRT(POWER(p1.x - p2.x, 2) + POWER(p1.y - p2.y, 2))), 2
+    ) AS shortest
+FROM point_2d AS p1, point_2d AS p2
+WHERE (p1.x, p1.y) <> (p2.x, p2.y);
 ```
