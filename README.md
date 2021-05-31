@@ -1,6 +1,6 @@
 created on: 05/26/2020
 
-updated on: 05/30/2021
+updated on: 05/31/2021
 
 # LeetCode Notes
 
@@ -40,6 +40,7 @@ Problem solving and practicing on [LeetCode](https://leetcode.com/) and [力扣]
 - [550 Game Play Analysis IV](database/550%20Game%20Play%20Analysis%20IV.md) - CTE as part of `WHERE` and `SELECT`
 - [574 Winning Candidate](database/574%20Winning%20Candidate.md) - CTE as part of `WHERE`
 - [614 Second Degree Follower](database/614%20Second%20Degree%20Follower.md) - CTE as part of `WHERE`
+- [615 Average Salary Departments vs Company](database/615%20Average%20Salary%20Departments%20vs%20Company.md) - CTE as part of the main table
   
 ### Window function
 
