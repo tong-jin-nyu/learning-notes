@@ -39,7 +39,8 @@ Problem solving and practicing on [LeetCode](https://leetcode.com/) and [力扣]
 - [512 Game Play Analysis II](database/512%20Game%20Play%20Analysis%20II.md) - CTE as part of `WHERE`
 - [550 Game Play Analysis IV](database/550%20Game%20Play%20Analysis%20IV.md) - CTE as part of `WHERE` and `SELECT`
 - [574 Winning Candidate](database/574%20Winning%20Candidate.md) - CTE as part of `WHERE`
-
+- [614 Second Degree Follower](database/614%20Second%20Degree%20Follower.md) - CTE as part of `WHERE`
+  
 ### Window function
 
 - [178 Rank Scores](database/178%20Rank%20Scores.md) - `DENSE_RANK()`
@@ -71,7 +72,7 @@ Problem solving and practicing on [LeetCode](https://leetcode.com/) and [力扣]
 ### Other
 
 - [612 Shortest Distance in a Plane](database/612%20Shortest%20Distance%20in%20a%20Plane.md)
-- [613 Shortest Distance in a Line](database/613%20Shortest%20Distance%20in%20a%20Line.md)
+- [613 Shortest Distance in a Line](database/613%20Shortest%20Distance%20in%20a%20Line.md) - `POWER`
 
 ## Analytics
 
