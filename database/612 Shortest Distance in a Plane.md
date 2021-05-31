@@ -39,8 +39,21 @@ The shortest distance is 1.00 from point (-1,-1) to (-1,2). So the output should
 ``` sql
 SELECT 
     ROUND(
-        MIN(SQRT(POWER(p1.x - p2.x, 2) + POWER(p1.y - p2.y, 2))), 2
+        MIN(SQRT(POWER(p1.x - p2.x, 2) + POWER(p1.y - p2.y, 2))), 
+        2
     ) AS shortest
 FROM point_2d AS p1, point_2d AS p2
 WHERE (p1.x, p1.y) <> (p2.x, p2.y);
 ```
+
+## Explanation
+
+The distance between two points can be calculated as:
+
+$$
+\text{distance} = \sqrt{(x_1 - x_2)^2 + (y_1 - y_2)^2}
+$$
+
+## Note
+
+- Calculation
