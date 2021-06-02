@@ -1,6 +1,6 @@
 created on: 05/26/2020
 
-updated on: 05/27/2021
+updated on: 05/31/2021
 
 # LeetCode Notes
 
@@ -39,7 +39,9 @@ Problem solving and practicing on [LeetCode](https://leetcode.com/) and [力扣]
 - [512 Game Play Analysis II](database/512%20Game%20Play%20Analysis%20II.md) - CTE as part of `WHERE`
 - [550 Game Play Analysis IV](database/550%20Game%20Play%20Analysis%20IV.md) - CTE as part of `WHERE` and `SELECT`
 - [574 Winning Candidate](database/574%20Winning%20Candidate.md) - CTE as part of `WHERE`
-
+- [614 Second Degree Follower](database/614%20Second%20Degree%20Follower.md) - CTE as part of `WHERE`
+- [615 Average Salary Departments vs Company](database/615%20Average%20Salary%20Departments%20vs%20Company.md) - CTE as part of the main table
+  
 ### Window function
 
 - [178 Rank Scores](database/178%20Rank%20Scores.md) - `DENSE_RANK()`
@@ -66,7 +68,12 @@ Problem solving and practicing on [LeetCode](https://leetcode.com/) and [力扣]
 - [596 Classes More Than 5 Students](database/596%20Classes%20More%20Than%205%20Students.md)
 - [597 Friend Requests I: Overall Acceptance Rate](database/597%20Friend%20Requests%20I%20-%20Overall%20Acceptance%20Rate.md) - `UNION ALL`
 - [608 Tree Node](database/608%20Tree%20Node.md) - `CASE`
-- [613 Shortest Distance in a Line](database/613%20Shortest%20Distance%20in%20a%20Line.md)
+
+
+### Other
+
+- [612 Shortest Distance in a Plane](database/612%20Shortest%20Distance%20in%20a%20Plane.md)
+- [613 Shortest Distance in a Line](database/613%20Shortest%20Distance%20in%20a%20Line.md) - `POWER`
 
 ## Analytics
 
