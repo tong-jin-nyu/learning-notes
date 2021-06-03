@@ -39,18 +39,27 @@ For the sample input, the output is:
 ## Solution (MySQL)
 
 ``` sql
-(SELECT *
-FROM student) AS CTE
-GROUP BY Continent
-ORDER BY 
-
+SELECT
+    MAX(CASE WHEN continent = 'America' THEN name ELSE NULL END) AS America,
+    MAX(CASE WHEN continent = 'Asia' THEN name ELSE NULL END) AS Asia,
+    MAX(CASE WHEN continent = 'Europe' THEN name ELSE NULL END) AS Europe
+FROM
+    (SELECT *,
+     ROW_NUMBER() OVER(PARTITION BY continent ORDER BY name) AS rnk
+     FROM student
+    ) AS CTE
+GROUP BY rnk
 ```
 
 ## Explanation
 
-The hardest part of this problem is to convert date format in CTE.
+First, create a ranking column to separate rows by continents. This will be the row number of the pivot table. Then, use case when function to mark the target name for each continent. This step also marks non-match rows as `NULL`. Finally, use aggregate function, `MAX()` (or `MIN()`), to exclude `NULL` values. `NULL` values will be replaced by blank space.
 
 ## Note
 
-- CTE as part of the main table
-- `CASE`
+- Use aggregate function to exclude `NULL` values
+  - `MAX()`
+- Window Function
+  - `ROW_NUMBER()`
+  - `OVER()`
+  - `PARTITION BY`
