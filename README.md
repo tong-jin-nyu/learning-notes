@@ -41,6 +41,7 @@ Problem solving and practicing on [LeetCode](https://leetcode.com/) and [力扣]
 - [574 Winning Candidate](database/574%20Winning%20Candidate.md) - CTE as part of `WHERE`
 - [614 Second Degree Follower](database/614%20Second%20Degree%20Follower.md) - CTE as part of `WHERE`
 - [615 Average Salary Departments vs Company](database/615%20Average%20Salary%20Departments%20vs%20Company.md) - CTE as part of the main table
+- [619 Biggest Single Number](database/619%20Biggest%20Single%20Number.md) - CTE as part of the main table
   
 ### Window function
 
@@ -54,6 +55,7 @@ Problem solving and practicing on [LeetCode](https://leetcode.com/) and [力扣]
 - [571 Find Median Given Frequency of Numbers](database/571%20Find%20Median%20Given%20Frequency%20of%20Numbers.md) - `SUM()`, `OVER()`
 - [579 Find Cumulative Salary of an Employee](database/579%20Find%20Cumulative%20Salary%20of%20an%20Employee.md) - `SUM()`, `OVER()`, `RANK()`
 - [585 Investments in 2016](database/585%20Investments%20in%202016.md) - `PARTITION BY`
+- [618 Students Report by Geography](database/618%20Students%20Report%20by%20Geography.md) - `ROW_NUMBER()`
 
 ### Sort and filter
 
