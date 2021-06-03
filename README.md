@@ -70,6 +70,7 @@ Problem solving and practicing on [LeetCode](https://leetcode.com/) and [力扣]
 - [596 Classes More Than 5 Students](database/596%20Classes%20More%20Than%205%20Students.md)
 - [597 Friend Requests I: Overall Acceptance Rate](database/597%20Friend%20Requests%20I%20-%20Overall%20Acceptance%20Rate.md) - `UNION ALL`
 - [608 Tree Node](database/608%20Tree%20Node.md) - `CASE`
+- [620 Not Boring Movies](database/620%20Not%20Boring%20Movies.md) - `WHERE`
 
 
 ### Other
