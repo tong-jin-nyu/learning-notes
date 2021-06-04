@@ -71,12 +71,16 @@ Problem solving and practicing on [LeetCode](https://leetcode.com/) and [力扣]
 - [597 Friend Requests I: Overall Acceptance Rate](database/597%20Friend%20Requests%20I%20-%20Overall%20Acceptance%20Rate.md) - `UNION ALL`
 - [608 Tree Node](database/608%20Tree%20Node.md) - `CASE`
 - [620 Not Boring Movies](database/620%20Not%20Boring%20Movies.md) - `WHERE`
+- [626 Exchange Seats](database/626%20Exchange%20Seats.md) - `CASE`
+- [1179 Reformat Department Table](database/1179%20Reformat%20Department%20Table.md) - `CASE`
+- [1045 Customers Who Bought All Products](database/1045%20Customers%20Who%20Bought%20All%20Products.md) - `HAVING`, `GROUP BY`
 
 
 ### Other
 
 - [612 Shortest Distance in a Plane](database/612%20Shortest%20Distance%20in%20a%20Plane.md)
 - [613 Shortest Distance in a Line](database/613%20Shortest%20Distance%20in%20a%20Line.md) - `POWER`
+- [627 Swap Salary](database/627%20Swap%20Salary.md) - `UPDATE`
 
 ## Analytics
 
