@@ -14,7 +14,8 @@ Medium
 
 ## Instructions
 
-The `Employee` table holds all employees. Every employee has an id, a salary, and ther is also a column for the department id.
+The `Employee` table holds all employees. Every employee has an id, a salary, 
+and ther is also a column for the department id.
 
 
 | Id | Name  | Salary | DepartmentId |
@@ -32,7 +33,9 @@ The `Department` table holds all departments of the company.
 | 1  | IT     |
 | 2  | Sales  |
 
-Write a SQL query to find employees who have the highest salary in each of the departments. For the above tables, your SQL query should return the following rows (order of rows does not matter).
+Write a SQL query to find employees who have the highest salary in each of the 
+departments. For the above tables, your SQL query should return the following 
+rows (order of rows does not matter).
 
 | Department | Employee | Salary |
 | ---------- | -------- | ------ |
@@ -42,7 +45,8 @@ Write a SQL query to find employees who have the highest salary in each of the d
 
 **Explanation:**
 
-Max and Jim both have the highest salary in the IT department and Henry has the highest salary in the Sales department.
+Max and Jim both have the highest salary in the IT department and Henry has 
+the highest salary in the Sales department.
 
 ## Solution (MS SQL)
 
@@ -66,7 +70,8 @@ FROM CTE
 WHERE rank = 1;
 ```
 
-First, join table together. Then, create a new column, `rank`, using the window function `RANK()`. Finally, select the row where rank equals 1.
+First, join table together. Then, create a new column, `rank`, using the window 
+function `RANK()`. Finally, select the row where rank equals 1.
 
 ## Note
 

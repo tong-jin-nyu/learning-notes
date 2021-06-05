@@ -14,7 +14,8 @@ Hard
 
 ## Instructions
 
-A U.S. graduate school has students from Asia, Europe and America. The students' location information are stored in table `student` as below.
+A U.S. graduate school has students from Asia, Europe and America. The students' 
+location information are stored in table `student` as below.
 
 ```
 | name   | continent |
@@ -25,7 +26,10 @@ A U.S. graduate school has students from Asia, Europe and America. The students'
 | Jane   | America   |
 ```
 
-Pivot the continent column in this table so that each name is sorted alphabetically and displayed underneath its corresponding continent. The ouptut headers should be America, Asia and Europe respectively. It is guaranteed that the student number from America is no less than either Asia or Europe.
+Pivot the continent column in this table so that each name is sorted 
+alphabetically and displayed underneath its corresponding continent. The ouptut 
+headers should be America, Asia and Europe respectively. It is guaranteed 
+that the student number from America is no less than either Asia or Europe.
 
 For the sample input, the output is:
 
@@ -53,7 +57,11 @@ GROUP BY rnk
 
 ## Explanation
 
-First, create a ranking column to separate rows by continents. This will be the row number of the pivot table. Then, use case when function to mark the target name for each continent. This step also marks non-match rows as `NULL`. Finally, use aggregate function, `MAX()` (or `MIN()`), to exclude `NULL` values. `NULL` values will be replaced by blank space.
+First, create a ranking column to separate rows by continents. This will be the 
+row number of the pivot table. Then, use case when function to mark the target 
+name for each continent. This step also marks non-match rows as `NULL`. Finally, 
+use aggregate function, `MAX()` (or `MIN()`), to exclude `NULL` values. `NULL` 
+values will be replaced by blank space.
 
 ## Note
 

@@ -27,8 +27,10 @@ Table `Trips`
 
 ```
 Id is the primary key for this table.
-The table holds all taxi trips. Each trip has a unique Id, while Client_Id and Driver_Id are foreign keys to the Users_Id at the Users table.
-Status is an ENUM type of (‘completed’, ‘cancelled_by_driver’, ‘cancelled_by_client’).
+The table holds all taxi trips. Each trip has a unique Id, while Client_Id and 
+Driver_Id are foreign keys to the Users_Id at the Users table.
+Status is an ENUM type of (‘completed’, ‘cancelled_by_driver’, 
+‘cancelled_by_client’).
 ```
 
 Table: `Users`
@@ -41,15 +43,21 @@ Table: `Users`
 
 ```
 Users_Id is the primary key for this table.
-The table holds all users. Each user has a unique Users_Id, and Role is an ENUM type of (‘client’, ‘driver’, ‘partner’).
+The table holds all users. Each user has a unique Users_Id, and Role is an ENUM 
+type of (‘client’, ‘driver’, ‘partner’).
 Status is an ENUM type of (‘Yes’, ‘No’).
 ```
 
-Write a SQL query to find the **cancellation rate** of requests with unbanned users (**both client and driver must not be banned**) each day between `"2013-10-01"` and `"2013-10-03"`.
+Write a SQL query to find the **cancellation rate** of requests with unbanned 
+users (**both client and driver must not be banned**) each day between 
+`"2013-10-01"` and `"2013-10-03"`.
 
-The **cancellation rate** is computed by dividing the number of canceled (by client or driver) requests with unbanned users by the total number of requests with unbanned users on that day.
+The **cancellation rate** is computed by dividing the number of canceled (by 
+client or driver) requests with unbanned users by the total number of requests 
+with unbanned users on that day.
 
-Return the result table in any order. Round `Cancellation Rate` to **two decimal** points.
+Return the result table in any order. Round `Cancellation Rate` to 
+**two decimal** points.
 
 The query result format is in the following example:
 
@@ -95,7 +103,8 @@ Result table:
 
 On 2013-10-01:
   - There were 4 requests in total, 2 of which were canceled.
-  - However, the request with Id=2 was made by a banned client (User_Id=2), so it is ignored in the calculation.
+  - However, the request with Id=2 was made by a banned client (User_Id=2), 
+  so it is ignored in the calculation.
   - Hence there are 3 unbanned requests in total, 1 of which was canceled.
   - The Cancellation Rate is (1 / 3) = 0.33
 On 2013-10-02:
@@ -128,10 +137,12 @@ WHERE
 GROUP BY t.Request_at;
 ```
 
-The key for this question is to calculate the **cancellation rate**. It can be calculated as:
+The key for this question is to calculate the **cancellation rate**. It can be 
+calculated as:
 
 $$
-\text{cancellation rate} = \frac{\text{number of not completed orders}}{\text{total orders}}
+\text{cancellation rate} = \frac{\text{number of not completed orders}}
+{\text{total orders}}
 $$
 
 To get this, take the average on those rows whose status is not `completed`.

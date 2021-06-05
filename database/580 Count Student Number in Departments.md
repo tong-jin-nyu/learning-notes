@@ -14,11 +14,16 @@ Medium
 
 ## Instructions
 
-A university uses 2 data tables, `student` and `department`, to store data about its students and the departments associated with each major.
+A university uses 2 data tables, `student` and `department`, to store data 
+about its students and the departments associated with each major.
 
-Write a query to print the respective department name and number of students majoring in each department for all departmnets in the `department` table (even ones with no current students).
+Write a query to print the respective department name and number of students 
+majoring in each department for all departmnets in the `department` table 
+(even ones with no current students).
 
-Sort your results by descending number of students; if two or more departments have the same number of students, then sort those departments alphabetically by department name.
+Sort your results by descending number of students; if two or more departments 
+have the same number of students, then sort those departments alphabetically 
+by department name.
 
 The `student` is described as follow:
 
@@ -31,7 +36,9 @@ The `student` is described as follow:
 | dept_id      | Integer   |
 ```
 
-where `student_id` is the student's ID number, `student_name` is the student's name, `gender` is their gender, and `dept_id` is the department ID associated with their declared major.
+where `student_id` is the student's ID number, `student_name` is the student's 
+name, `gender` is their gender, and `dept_id` is the department ID associated 
+with their declared major.
 
 And the department table is described as below:
 
@@ -41,7 +48,8 @@ And the department table is described as below:
 | dept_id     | Integer |
 | dept_name   | String  |
 ```
-where `dept_id` is the department's ID number and `dept_name` is the department name.
+where `dept_id` is the department's ID number and `dept_name` is the department 
+name.
 
 **Example**:
 
@@ -82,7 +90,9 @@ GROUP BY dept_name
 ORDER BY student_number DESC, dept_name ASC;
 ```
 
-The trick is to include departments with no current students. Therefore, use `RIGHT JOIN` on `student` and `department` to include all departments in the `department` table.
+The trick is to include departments with no current students. Therefore, use 
+`RIGHT JOIN` on `student` and `department` to include all departments in the 
+`department` table.
 
 ## Notes
 

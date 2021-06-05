@@ -14,7 +14,8 @@ Hard
 
 ## Instructions
 
-The `Employee` table holds all employees. Every employee has an id, a salary, and ther is also a column for the department id.
+The `Employee` table holds all employees. Every employee has an id, a salary, 
+and ther is also a column for the department id.
 
 
 | Id | Name  | Salary | DepartmentId |
@@ -34,7 +35,9 @@ The `Department` table holds all departments of the company.
 | 1  | IT     |
 | 2  | Sales  |
 
-Write a SQL query to find employees who earn the top three salaries in each of the department. For the above tables, your SQL query should return the following rows (order of rows does not matter).
+Write a SQL query to find employees who earn the top three salaries in each of 
+the department. For the above tables, your SQL query should return the 
+following rows (order of rows does not matter).
 
 | Department | Employee | Salary |
 | ---------- | -------- | ------ |
@@ -47,7 +50,10 @@ Write a SQL query to find employees who earn the top three salaries in each of t
 
 **Explanation:**
 
-In IT department, Max earns the highest salary, both Randy and Joe earn the second highest salary, and Will earns the third highest salary. There are only two employees in the Sales department, Henry earns the highest salary while Sam earns the second highest salary.
+In IT department, Max earns the highest salary, both Randy and Joe earn the 
+second highest salary, and Will earns the third highest salary. There are only 
+two employees in the Sales department, Henry earns the highest salary while Sam 
+earns the second highest salary.
 
 ## Solution (MS SQL)
 
@@ -74,7 +80,10 @@ FROM CTE
 WHERE rank <= 3;
 ```
 
-Similar to Problem 184, in this case, use window function to create a new column, `rank`. The difference is that, in this case, employees in a specific department may take same salary level. Taking this into consideration, we use `DENSE_RANK()` to create a density ranking column.
+Similar to Problem 184, in this case, use window function to create a new 
+column, `rank`. The difference is that, in this case, employees in a specific 
+department may take same salary level. Taking this into consideration, we use 
+`DENSE_RANK()` to create a density ranking column.
 
 ## Note
 

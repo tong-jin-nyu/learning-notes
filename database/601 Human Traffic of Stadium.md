@@ -25,11 +25,15 @@ Table: `Stadium`
 | people        | int     |
 +---------------+---------+
 visit_date is the primary key for this table.
-Each row of this table contains the visit date and visit id to the stadium with the number of people during the visit.
-No two rows will have the same visit_date, and as the id increases, the dates increase as well.
+Each row of this table contains the visit date and visit id to the stadium with 
+the number of people during the visit.
+No two rows will have the same visit_date, and as the id increases, the dates 
+increase as well.
 ```
 
-Write an SQL query to display the records with three or more rows with **consecutive** id's, and the number of people is greater than or equal to 100 for each.
+Write an SQL query to display the records with three or more rows with 
+**consecutive** id's, and the number of people is greater than or equal to 
+100 for each.
 
 Return the result table ordered by `visit_date` in **ascending order**.
 
@@ -59,8 +63,11 @@ Result table:
 | 7    | 2017-01-07 | 199       |
 | 8    | 2017-01-09 | 188       |
 +------+------------+-----------+
-The four rows with ids 5, 6, 7, and 8 have consecutive ids and each of them has >= 100 people attended. Note that row 8 was included even though the visit_date was not the next day after row 7.
-The rows with ids 2 and 3 are not included because we need at least three consecutive ids.
+The four rows with ids 5, 6, 7, and 8 have consecutive ids and each of them 
+has >= 100 people attended. Note that row 8 was included even though the 
+visit_date was not the next day after row 7.
+The rows with ids 2 and 3 are not included because we need at least three 
+consecutive ids.
 ```
 
 ## Solution
@@ -85,7 +92,8 @@ ORDER BY s1.visit_date ASC;
 
 ## Explanation
 
-The trick here is to link three tables and find at least three consecutive days. To achieve this, we need to join three tables either by `visit_date` or by `id`.
+The trick here is to link three tables and find at least three consecutive days. 
+To achieve this, we need to join three tables either by `visit_date` or by `id`.
 
 ## Notes
 

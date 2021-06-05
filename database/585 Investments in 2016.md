@@ -14,10 +14,13 @@ Medium
 
 ## Instructions
 
-Write a SQL query to print the sum of all total investment values in 2016 (`TIV_2016`) to a scale of 2 decimal places, for all policy holders who meet the following criteria:
+Write a SQL query to print the sum of all total investment values in 2016 
+(`TIV_2016`) to a scale of 2 decimal places, for all policy holders who meet 
+the following criteria:
 
 1. Have the same `TIV_2015` value as one or more other policy holders
-2. Are not located in the same city as any other policy holder (i.e.: the (latitude, longitude) attribute pairs must be unique.)
+2. Are not located in the same city as any other policy holder 
+   (i.e.: the (latitude, longitude) attribute pairs must be unique.)
 
 **Input Format**:
 
@@ -33,7 +36,10 @@ The `insurance` table is described as follows:
 | LON         | NUMERIC(5,2)  |
 ```
 
-where `PID` is the policy holder's policy ID, `TIV_2015` is the total investment value in 2015, `TIV_2016` is the total investment value in 2016, `LAT` is the latitude of the policy holder's city, and `LON` is the longtitude of the policy holder's city.
+where `PID` is the policy holder's policy ID, `TIV_2015` is the total 
+investment value in 2015, `TIV_2016` is the total investment value in 2016, 
+`LAT` is the latitude of the policy holder's city, and `LON` is the longtitude 
+of the policy holder's city.
 
 **Sample Input**:
 
@@ -57,12 +63,16 @@ where `PID` is the policy holder's policy ID, `TIV_2015` is the total investment
 **Explanation**:
 
 ```
-The first record in the table, like the last record, meets both of the two criteria.
-The TIV_2015 value '10' is as the same as the third and forth record, and its location unique.
+The first record in the table, like the last record, meets both of the two 
+criteria.
+The TIV_2015 value '10' is as the same as the third and forth record, and its 
+location unique.
 
-The second record does not meet any of the two criteria. Its TIV_2015 is not like any other policyholders.
+The second record does not meet any of the two criteria. Its TIV_2015 is not 
+like any other policyholders.
 
-And its location is the same with the third record, which makes the third record fail, too.
+And its location is the same with the third record, which makes the third record 
+fail, too.
 
 So, the result is the sum of TIV_2016 of the first and last record, which is 45.
 ```
@@ -85,8 +95,10 @@ WHERE
     CTE.num_location = 1;
 ```
 
-The key is to partition the data by `TIV_2015` and count number of `PID` with the same `TIV_2015`.
-Then, do the same again for geographic location. Finally, select rows with the same `TIV_2015` value but with different `LAT` and `LON` values.
+The key is to partition the data by `TIV_2015` and count number of `PID` with 
+the same `TIV_2015`.
+Then, do the same again for geographic location. Finally, select rows with the 
+same `TIV_2015` value but with different `LAT` and `LON` values.
 
 ## Notes
 

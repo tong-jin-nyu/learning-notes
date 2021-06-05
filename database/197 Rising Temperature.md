@@ -26,7 +26,8 @@ Table: `Weather`
 
 This table contains information about the temperature in a certain day.
 
-Write an SQL query to find all dates' `id` with higher temperature compared to its previous dates (yesterday).
+Write an SQL query to find all dates' `id` with higher temperature compared to 
+its previous dates (yesterday).
 
 Return the result table in **any order**.
 

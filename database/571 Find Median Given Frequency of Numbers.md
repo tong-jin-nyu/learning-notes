@@ -27,7 +27,8 @@ The `Numbers` table keeps the value of number and its frequency.
 +----------+-------------+
 ```
 
-In this table, the numbers are `0, 0, 0, 0, 0, 0, 0, 1, 2, 2, 2, 3`, so the median is `(0 + 0) / 2 = 0`.
+In this table, the numbers are `0, 0, 0, 0, 0, 0, 0, 1, 2, 2, 2, 3`, so the 
+median is `(0 + 0) / 2 = 0`.
 
 ```
 +--------+
@@ -58,7 +59,11 @@ WHERE
     total_desc >= total_sum / 2;
 ```
 
-Create two columns of sum of frequency: one in ascending order as `total_asc`; the other in descending order as `total_desc`. Select the number(s) where the cumulative frequency is at the middle of both `total_asc` and `total_desc`. Finally, calculate the average (for both even and odd lengths) and round to 4 decimal points.
+Create two columns of sum of frequency: one in ascending order as `total_asc`; 
+the other in descending order as `total_desc`. Select the number(s) where the 
+cumulative frequency is at the middle of both `total_asc` and `total_desc`. 
+Finally, calculate the average (for both even and odd lengths) and round to 4 
+decimal points.
 
 ## Note
 

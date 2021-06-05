@@ -14,7 +14,8 @@ Easy
 
 ## Instructions
 
-The `Employee` table holds all employees including their managers. Every employee has an Id, and their is also a column for the manager Id.
+The `Employee` table holds all employees including their managers. Every 
+employee has an Id, and their is also a column for the manager Id.
 
 | Id | Name  | Salary | ManagerId |
 | -- | ----- | ------ | --------- |
@@ -23,7 +24,9 @@ The `Employee` table holds all employees including their managers. Every employe
 | 3  | Sam   | 60000  | NULL      |
 | 4  | Max   | 90000  | NULL      |
 
-Given the `Employee` table, write a SQL query that finds out employees who earn more than their managers. For the above table, Joe is the only employee who earns more than his manager.
+Given the `Employee` table, write a SQL query that finds out employees who 
+earn more than their managers. For the above table, Joe is the only employee 
+who earns more than his manager.
 
 | Employee |
 | -------- |
@@ -43,8 +46,9 @@ WHERE e.Salary > m.Salary;
 
 1. Managers are those whose `ManagerId` is NULL.
 2. Use left join to link manager salaries with employees' salaries.
-3. Because of left join, managers will not be linked with a manager salary value because of NULL.
-4. Filter to rows which the employee's salary is higher than manager's salary.
+3. Because of left join, managers will not be linked with a manager salary 
+4. value because of NULL.
+5. Filter to rows which the employee's salary is higher than manager's salary.
 
 ## Note
 

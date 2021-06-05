@@ -22,7 +22,9 @@ Write a SQL query to get the second highest salary from the `Employee` table.
 | 2   | 200    |
 | 3   | 300    |
 
-For example, given the above Employee table, the query should return `200` as the second highest salary. If there is no second highest salary, then the query should return `null`.
+For example, given the above Employee table, the query should return `200` as 
+the second highest salary. If there is no second highest salary, then the query 
+should return `null`.
 
 | SecondHighestSalary |
 | ------------------- |
@@ -36,7 +38,9 @@ FROM Employee
 WHERE Salary != (SELECT MAX(Salary) FROM Employee)
 ```
 
-Apply CTE as part of the `WHERE` clause. In the CTE, compute the highest salary. Then, selecting the maximum salary that is not equal to the highest salary gets the second highest salary.
+Apply CTE as part of the `WHERE` clause. In the CTE, compute the highest salary. 
+Then, selecting the maximum salary that is not equal to the highest salary gets 
+the second highest salary.
 
 ## Solution 2
 
@@ -51,7 +55,8 @@ SELECT IFNULL(
 ) AS SecondHighestSalary
 ```
 
-Apply CTE as part of the `SELECT` clause. In the CTE, sort distinct salary value in descending order. Then, select the second value.
+Apply CTE as part of the `SELECT` clause. In the CTE, sort distinct salary 
+value in descending order. Then, select the second value.
 
 ## Notes
 

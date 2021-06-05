@@ -27,9 +27,11 @@ order_number is the primary key for this table.
 This table contains information about the order ID and the customer ID.
 ```
 
-Write a SQL query to find the `customer_number` for the customer who has placed **the largest number of orders**.
+Write a SQL query to find the `customer_number` for the customer who has placed 
+**the largest number of orders**.
 
-It is guaranteed that exactly one customer will have placed more orders than any other customer.
+It is guaranteed that exactly one customer will have placed more orders than 
+any other customer.
 
 The query result format is in the following example:
 
@@ -50,10 +52,12 @@ Result table:
 +-----------------+
 | 3               |
 +-----------------+
-The customer with number 3 has two orders, which is greater than either customer 1 or 2 because each of them only has one order.
+The customer with number 3 has two orders, which is greater than either 
+customer 1 or 2 because each of them only has one order.
 So the result is customer_number 3.
 
-**Follow up**: what if more than one customer have the largest number of orders, can you find all the `customer_number` in this case?
+**Follow up**: what if more than one customer have the largest number of 
+orders, can you find all the `customer_number` in this case?
 
 ```
 ## Solution
@@ -79,7 +83,8 @@ HAVING COUNT(order_number) >= ALL(
 );
 ```
 
-The key is to apply nested search to find the `customer_number` whose total number of orders is greater than any of the remaining customer's.
+The key is to apply nested search to find the `customer_number` whose total 
+number of orders is greater than any of the remaining customer's.
 
 ## Notes
 

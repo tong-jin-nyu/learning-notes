@@ -16,9 +16,11 @@ Hard
 
 The `Employee` table holds the salary information in a year. 
 
-Write a SQL quert to get the cumulative sum of an employee's salary over a period of 3 months but exclude the most recent month.
+Write a SQL quert to get the cumulative sum of an employee's salary over a 
+period of 3 months but exclude the most recent month.
 
-The result should be displayed by `id` ascending, and then by `month` descending.
+The result should be displayed by `id` ascending, and then by `month` 
+descending.
 
 **Example**:
 
@@ -49,12 +51,14 @@ Output
 
 **Explanation**:
 
-Employee `1` has 3 salary records for the following 3 months except the most recent month `4`: 
+Employee `1` has 3 salary records for the following 3 months except the most 
+recent month `4`: 
 - salary 40 for month `3`
 - salary 30 for month `2`
 - salary 20 for month `1`
 
-So the cumulative sum of salary of this employee over 3 months is 90 (40 + 30 + 20), 50 (30 + 20) and 20 respectively.
+So the cumulative sum of salary of this employee over 3 months is 
+90 (40 + 30 + 20), 50 (30 + 20) and 20 respectively.
 
 ```
 | Id | Month | Salary |
@@ -64,7 +68,8 @@ So the cumulative sum of salary of this employee over 3 months is 90 (40 + 30 + 
 | 1  | 1     | 20     |
 ```
 
-Employee `2` only has one salary record (month `1`) expect its most recent month `2`.
+Employee `2` only has one salary record (month `1`) expect its most recent 
+month `2`.
 
 ```
 | Id | Month | Salary |
@@ -96,14 +101,18 @@ FROM
     (SELECT
         id,
         month,
-        SUM(salary) OVER(PARTITION BY id ORDER BY month ROWS 2 PRECEDING) AS salary,
+        SUM(salary) OVER(PARTITION BY id ORDER BY month ROWS 2 PRECEDING) AS 
+        salary,
         RANK() OVER(PARTITION BY id ORDER BY month DESC) AS rnk
     FROM Employee) AS CTE
 WHERE rnk > 1
 ORDER BY id ASC, month DESC;
 ```
 
-Use window function `SUM()` to acquire the cumulative salary for each `id`. Then, use `RANK()` to assign ranks to the cumulative salary. Finally, use the rank to exclude the most recent month (the row with highest salary for each `id`).
+Use window function `SUM()` to acquire the cumulative salary for each `id`. 
+Then, use `RANK()` to assign ranks to the cumulative salary. Finally, use the 
+rank to exclude the most recent month (the row with highest salary for each 
+`id`).
 
 ## Note
 

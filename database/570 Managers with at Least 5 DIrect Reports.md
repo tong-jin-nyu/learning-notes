@@ -14,7 +14,8 @@ Medium
 
 ## Instructions
 
-The `Employee` table holds all employees including their managers. Every employee has an Id, and there is also a column for the manager Id.
+The `Employee` table holds all employees including their managers. Every 
+employee has an Id, and there is also a column for the manager Id.
 
 ```
 +------+----------+-----------+----------+
@@ -29,7 +30,8 @@ The `Employee` table holds all employees including their managers. Every employe
 +------+----------+-----------+----------+
 ```
 
-Given the Employee table, write a SQL query that finds out managers with at least 5 direct report. For the above table, your SQL query should return:
+Given the Employee table, write a SQL query that finds out managers with at 
+least 5 direct report. For the above table, your SQL query should return:
 
 ```
 +-------+
@@ -49,7 +51,8 @@ GROUP BY e2.Id
 HAVING COUNT(*) >= 5
 ```
 
-Count managerId and select those distinct id with at least 5 duplicates. Then, self join to acquire manager names.
+Count managerId and select those distinct id with at least 5 duplicates. Then, 
+self join to acquire manager names.
 
 ## Note
 

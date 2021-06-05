@@ -29,7 +29,8 @@ Given a table `customer` holding customers information and the referee.
 +------+------+-----------+
 ```
 
-Write a query to return the list of customers **NOT** referred by the person with id `2`.
+Write a query to return the list of customers **NOT** referred by the person 
+with id `2`.
 
 For the sample data above, the result is:
 

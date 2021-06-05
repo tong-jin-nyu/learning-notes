@@ -30,7 +30,8 @@ Table: `salary`
 | 6  | 3           | 8000   | 2017-02-28 |
 ```
 
-The **employee_id** column refers to the **employee_id** in the following table `employee`.
+The **employee_id** column refers to the **employee_id** in the following table 
+`employee`.
  
 ```
 | employee_id | department_id |
@@ -55,13 +56,19 @@ So for the sample data above, the result is:
 
 In March, the company's average salary is (9000+6000+10000)/3 = 8333.33...
  
-The average salary for department '1' is 9000, which is the salary of **employee_id** '1' since there is only one employee in this department. So the comparison result is 'higher' since 9000 > 8333.33 obviously.
+The average salary for department '1' is 9000, which is the salary of 
+**employee_id** '1' since there is only one employee in this department. So the 
+comparison result is 'higher' since 9000 > 8333.33 obviously.
  
 
-The average salary of department '2' is (6000 + 10000)/2 = 8000, which is the average of **employee_id** '2' and '3'. So the comparison result is 'lower' since 8000 < 8333.33.
+The average salary of department '2' is (6000 + 10000)/2 = 8000, which is the 
+average of **employee_id** '2' and '3'. So the comparison result is 'lower' 
+since 8000 < 8333.33.
  
 
-With the same formula for the average salary comparison in February, the result is 'same' since both the department '1' and '2' have the same average salary with the company, which is 7000.
+With the same formula for the average salary comparison in February, the result 
+is 'same' since both the department '1' and '2' have the same average salary 
+with the company, which is 7000.
 
 ## Solution (MySQL)
 

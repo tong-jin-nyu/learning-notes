@@ -14,7 +14,9 @@ Easy
 
 ## Instructions
 
-Suppose that a website contains two tables, the `Customers` table and the `Orders` table. Write a SQL query to find all customers who never order anything.
+Suppose that a website contains two tables, the `Customers` table and the 
+`Orders` table. Write a SQL query to find all customers who never order 
+anything.
 
 Table: `Customers`
 

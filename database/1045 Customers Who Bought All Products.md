@@ -37,7 +37,8 @@ Table: `Product`
 product_key is the primary key column for this table.
 ```
 
-Write an SQL query for a report that provides the customer ids from the `Customer` table that bought all the products in the `Product` table.
+Write an SQL query for a report that provides the customer ids from the 
+`Customer` table that bought all the products in the `Product` table.
 
 Return the result table in **any order**.
 
@@ -70,7 +71,8 @@ Result table:
 | 1           |
 | 3           |
 +-------------+
-The customers who bought all the products (5 and 6) are customers with id 1 and 3.
+The customers who bought all the products (5 and 6) are customers with id 1 
+and 3.
 ```
 
 ## Solution (MySQL)
@@ -84,7 +86,10 @@ HAVING COUNT(DISTINCT(product_key)) = (SELECT COUNT(*) FROM Product);
 
 ## Explanation
 
-Group by customer_id and then count number of distinct product keys in each group. If there are equal number of distinct product keys in a certain group, than the customer associated with that group is considered to have purchased all products.
+Group by customer_id and then count number of distinct product keys in each 
+group. If there are equal number of distinct product keys in a certain group, 
+than the customer associated with that group is considered to have purchased 
+all products.
 
 ## Note
 

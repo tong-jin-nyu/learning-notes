@@ -27,10 +27,13 @@ Table: `Activity`
 +--------------+---------+
 (player_id, event_date) is the primary key of this table.
 This table shows the activity of players of some game.
-Each row is a record of a player who logged in and played a number of games (possibly 0) before logging out on some day using some device.
+Each row is a record of a player who logged in and played a number of games 
+(possibly 0) before logging out on some day using some device.
 ```
 
-Write an SQL query that reports for each player and date, how many games played so far by the player. That is, the total number of games played by the player until that date. Check the example for clarity.
+Write an SQL query that reports for each player and date, how many games played 
+so far by the player. That is, the total number of games played by the player 
+until that date. Check the example for clarity.
 
 The query result format is in the following example:
 
@@ -56,7 +59,8 @@ Result table:
 | 3         | 2016-03-02 | 0                   |
 | 3         | 2018-07-03 | 5                   |
 +-----------+------------+---------------------+
-For the player with id 1, 5 + 6 = 11 games played by 2016-05-02, and 5 + 6 + 1 = 12 games played by 2017-06-25.
+For the player with id 1, 5 + 6 = 11 games played by 2016-05-02, and 
+5 + 6 + 1 = 12 games played by 2017-06-25.
 For the player with id 3, 0 + 5 = 5 games played by 2018-07-03.
 Note that for each player we only care about the days when the player logged in.
 ```
@@ -67,7 +71,8 @@ Note that for each player we only care about the days when the player logged in.
 SELECT
     player_id,
     event_date,
-    SUM(games_played) OVER(PARTITION BY player_id ORDER BY event_date) AS games_played_so_far
+    SUM(games_played) OVER(PARTITION BY player_id ORDER BY event_date) AS 
+    games_played_so_far
 FROM Activity;
 ```
 

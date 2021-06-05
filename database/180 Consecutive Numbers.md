@@ -23,7 +23,8 @@ Table: `Logs`
 
 `id is the primary key for this table.`
 
-Write a SQL query to find all numbers that appear at least three times consecutively. 
+Write a SQL query to find all numbers that appear at least three times 
+consecutively. 
 
 Return the result table in **any order**.
 
@@ -64,7 +65,8 @@ WHERE
     AND l2.Num = l3.Num
 ```
 
-Self join table three times to include rows with three consecutive repeats. Use `DISTINCT` to get rid of duplicates.
+Self join table three times to include rows with three consecutive repeats. 
+Use `DISTINCT` to get rid of duplicates.
 
 ## Solution 2
 
@@ -80,7 +82,8 @@ FROM CTE
 WHERE Num = lead AND Num = lag;
 ```
 
-Use window function `LEAD()` and `LAG()` to create two columns showing the lead and lag of a row. Filter to rows with same values as their leads and lags.
+Use window function `LEAD()` and `LAG()` to create two columns showing the 
+lead and lag of a row. Filter to rows with same values as their leads and lags.
 
 ## Note
 

@@ -26,10 +26,12 @@ Table: Department
 +---------------+---------+
 (id, month) is the primary key of this table.
 The table has information about the revenue of each department per month.
-The month has values in ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"].
+The month has values in ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug",
+"Sep","Oct","Nov","Dec"].
 ```
 
-Write an SQL query to reformat the table such that there is a department id column and a revenue column for each month.
+Write an SQL query to reformat the table such that there is a department id 
+column and a revenue column for each month.
 
 The query result format is in the following example:
 
@@ -54,7 +56,8 @@ Result table:
 | 3    | null        | 10000       | null        | ... | null        |
 +------+-------------+-------------+-------------+-----+-------------+
 
-Note that the result table has 13 columns (1 for the department id + 12 for the months).
+Note that the result table has 13 columns (1 for the department id + 12 for 
+the months).
 ```
 
 ## Solution (MySQL)

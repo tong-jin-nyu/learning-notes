@@ -14,7 +14,8 @@ Easy
 
 ## Instructions
 
-Write a SQL query to delete all duplicate email entries in a table named `Person`, keeping only unique emails based on its smallest id.
+Write a SQL query to delete all duplicate email entries in a table named 
+`Person`, keeping only unique emails based on its smallest id.
 
 | Id | Email                |
 | -- | -------------------- |
@@ -24,7 +25,8 @@ Write a SQL query to delete all duplicate email entries in a table named `Person
 
 Id is the primary key column for this table.
 
-For example, after running your query, the above `Person` table should have the following rows:
+For example, after running your query, the above `Person` table should have 
+the following rows:
 
 | Id | Email            |
 | -- | ---------------- |
@@ -33,7 +35,8 @@ For example, after running your query, the above `Person` table should have the 
 
 Note:
 
-Your output is the whole `Person` table after executing your sql. Use delete statement.
+Your output is the whole `Person` table after executing your sql. Use delete 
+statement.
 
 ## Solution (MS SQL)
 

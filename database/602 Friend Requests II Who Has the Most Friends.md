@@ -14,7 +14,8 @@ Medium
 
 ## Instructions
 
-In social network like Facebook or Twitter, people send friend requests and accept others' requests as well.
+In social network like Facebook or Twitter, people send friend requests and 
+accept others' requests as well.
 
 Table `request_accepted`
 
@@ -27,12 +28,15 @@ Table `request_accepted`
 | 2            | 3           | 2016-06-08  |
 | 3            | 4           | 2016-06-09  |
 +--------------+-------------+-------------+
-This table holds the data of friend acceptance, while requester_id and accepter_id both are the id of a person.
+This table holds the data of friend acceptance, while requester_id and 
+accepter_id both are the id of a person.
 ```
-Write a query to find the the people who has most friends and the most friends number under the following rules:
+Write a query to find the the people who has most friends and the most friends 
+number under the following rules:
 
 It is guaranteed there is only 1 people having the most friends.
-The friend request could only been accepted once, which mean there is no multiple records with the same requester_id and accepter_id value.
+The friend request could only been accepted once, which mean there is no 
+multiple records with the same requester_id and accepter_id value.
 For the sample data above, the result is:
 
 ```
@@ -42,12 +46,14 @@ Result table:
 |------|------|
 | 3    | 3    |
 +------+------+
-The person with id '3' is a friend of people '1', '2' and '4', so he has 3 friends in total, which is the most number than any others.
+The person with id '3' is a friend of people '1', '2' and '4', so he has 3 
+friends in total, which is the most number than any others.
 ```
 
 **Follow-up**:
 
-In the real world, multiple people could have the same most number of friends, can you find all these people in this case?
+In the real world, multiple people could have the same most number of friends, 
+can you find all these people in this case?
 
 ## Solution
 
@@ -67,11 +73,13 @@ LIMIT 1;
 
 ## Explanation
 
-The goal is to count distinct ids. Therefore, we need to union two id columns together.
+The goal is to count distinct ids. Therefore, we need to union two id columns 
+together.
 
 ## Follow-up
 
-To find people with most number of friends, we can add a new rank column on the final table that ranks the `num` column. Then, select rows with the top rank.
+To find people with most number of friends, we can add a new rank column on the 
+final table that ranks the `num` column. Then, select rows with the top rank.
 
 ## Note
 

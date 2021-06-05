@@ -14,7 +14,9 @@ Easy
 
 ## Instructions
 
-Table `my_numbers` contains many numbers in column **num** including duplicated ones. Can you write a SQL query to find the biggest number, which only appears once.
+Table `my_numbers` contains many numbers in column **num** including duplicated 
+ones. Can you write a SQL query to find the biggest number, which only appears 
+once.
 
 ```
 +---+

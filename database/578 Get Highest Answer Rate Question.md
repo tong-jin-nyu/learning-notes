@@ -14,12 +14,15 @@ Medium
 
 ## Instructions
 
-Get the highest answer rate question from a table `survey_log` with these columns: 
+Get the highest answer rate question from a table `survey_log` with these 
+columns: 
 
 - `id`: user id
 - `action`: "show", "answer", "skip"
 - `question_id`
-- `answer_id`: not null when action column is "answer"; null for "show" and "skip"
+- `answer_id`
+  - not null when action column is "answer"; 
+  - null for "show" and "skip"
 - `q_num`: the numeral order of the question in current session.
 - `timestamp`
 
@@ -44,10 +47,12 @@ Output:
 |    285      |
 +-------------+
 Explanation:
-question 285 has answer rate 1/1, while question 369 has 0/1 answer rate, so output 285.
+question 285 has answer rate 1/1, while question 369 has 0/1 answer rate, so 
+output 285.
 ```
 
-**Note**: the highest answer rate meaning is: answer number's ratio in show number in the same question. 
+**Note**: the highest answer rate meaning is: answer number's ratio in show 
+number in the same question. 
 
 
 ## Solution
@@ -62,7 +67,10 @@ ORDER BY COUNT(answer_id) DESC
 LIMIT 1;
 ```
 
-The key is to transfer the highest answer rate. Getting the highest answer rate is equal to finding the question with highest answers. Therefore, we can count the number of answers in each question and then select the one with most answers.
+The key is to transfer the highest answer rate. Getting the highest answer rate 
+is equal to finding the question with highest answers. Therefore, we can count 
+the number of answers in each question and then select the one with most 
+answers.
 
 ## Note
 

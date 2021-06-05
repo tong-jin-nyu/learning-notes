@@ -45,7 +45,8 @@ id is the auto-increment primary key,
 CandidateId is the id appeared in Candidate table.
 ```
 
-Write a query to find the name of the winning candidate, the above example will return the winner `B`.
+Write a query to find the name of the winning candidate, the above example will 
+return the winner `B`.
 
 ```
 +------+
@@ -70,7 +71,9 @@ WHERE id =
 );
 ```
 
-For each unique candidate ID, find the number of wins. Then, sort in descending order and get the first row. Finally, link the candidate name with the winner ID.
+For each unique candidate ID, find the number of wins. Then, sort in descending 
+order and get the first row. Finally, link the candidate name with the winner 
+ID.
 
 ## Note
 

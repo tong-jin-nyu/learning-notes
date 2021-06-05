@@ -27,10 +27,15 @@ Table: `Activity`
 +--------------+---------+
 (player_id, event_date) is the primary key of this table.
 This table shows the activity of players of some game.
-Each row is a record of a player who logged in and played a number of games (possibly 0) before logging out on some day using some device.
+Each row is a record of a player who logged in and played a number of games 
+(possibly 0) before logging out on some day using some device.
 ```
 
-Write an SQL query that reports the **fraction** of players that logged in again on the day after the day they first logged in, **rounded to 2 decimal places**. In other words, you need to count the number of players that logged in for at least two consecutive days starting from their first login date, then divide that number by the total number of players.
+Write an SQL query that reports the **fraction** of players that logged in 
+again on the day after the day they first logged in, 
+**rounded to 2 decimal places**. In other words, you need to count the number 
+of players that logged in for at least two consecutive days starting from 
+their first login date, then divide that number by the total number of players.
 
 The query result format is in the following example:
 
@@ -52,7 +57,8 @@ Result table:
 +-----------+
 | 0.33      |
 +-----------+
-Only the player with id 1 logged back in after the first day he had logged in so the answer is 1/3 = 0.33
+Only the player with id 1 logged back in after the first day he had logged in 
+so the answer is 1/3 = 0.33
 ```
 
 ## Solution
@@ -60,7 +66,8 @@ Only the player with id 1 logged back in after the first day he had logged in so
 ``` sql
 SELECT 
     ROUND(
-        COUNT(DISTINCT player_id) / (SELECT COUNT(DISTINCT player_id) FROM Activity),
+        COUNT(DISTINCT player_id) / (SELECT COUNT(DISTINCT player_id) 
+        FROM Activity),
         2
     ) AS fraction
 FROM Activity
@@ -74,10 +81,13 @@ WHERE (player_id, event_date) IN
 The fraction can be calculated as:
 
 $$
-\text{fraction} = \frac{\text{number of players logged in for at least 2 consecutive days}}{\text{total number of players}}
+\text{fraction} = \frac{\text{number of players logged in for at least 2 
+consecutive days}}{\text{total number of players}}
 $$
 
-Therefore, for the numerator, we need to count the number of distinct players in a dataset where they logged in for at least two consecutive days. For denominator, we can simply count the distinct players in the original dataset.
+Therefore, for the numerator, we need to count the number of distinct players 
+in a dataset where they logged in for at least two consecutive days. For 
+denominator, we can simply count the distinct players in the original dataset.
 
 ## Note
 

@@ -68,7 +68,8 @@ ON e.empId = b.empId
 WHERE bonus < 1000 OR bonus IS NULL;
 ```
 
-Use left join and `WHERE` to get the target values. Consider missing values (for those who do not have any bonus).
+Use left join and `WHERE` to get the target values. Consider missing values 
+(for those who do not have any bonus).
 
 ## Note
 

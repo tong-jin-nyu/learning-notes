@@ -44,7 +44,8 @@ The `Employee` table holds all employees. The employee table has three columns:
 +-----+------------+--------+
 ```
 
-Write a SQL query to find the median salary of each company. Bonus points if you can solve it without using any built-in SQL functions.
+Write a SQL query to find the median salary of each company. Bonus points if 
+you can solve it without using any built-in SQL functions.
 
 ```
 +-----+------------+--------+
@@ -81,10 +82,13 @@ WHERE rnk IN (n_salary/2, n_salary/2 + 1, n_salary/2 + 0.5)
 The fraction can be calculated as:
 
 $$
-\text{fraction} = \frac{\text{number of players logged in for at least 2 consecutive days}}{\text{total number of players}}
+\text{fraction} = \frac{\text{number of players logged in for at least 2 
+consecutive days}}{\text{total number of players}}
 $$
 
-Therefore, for the numerator, we need to count the number of distinct players in a dataset where they logged in for at least two consecutive days. For denominator, we can simply count the distinct players in the original dataset.
+Therefore, for the numerator, we need to count the number of distinct players 
+in a dataset where they logged in for at least two consecutive days. For 
+denominator, we can simply count the distinct players in the original dataset.
 
 ## Note
 

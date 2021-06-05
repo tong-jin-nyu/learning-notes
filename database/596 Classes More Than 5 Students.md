@@ -59,7 +59,8 @@ GROUP BY class
 HAVING COUNT(DISTINCT student) >=5;
 ```
 
-The key here is that some students may retake courses. Therefore, in the `HAVING` clause, we need to count distinct students.
+The key here is that some students may retake courses. Therefore, in the 
+`HAVING` clause, we need to count distinct students.
 
 ### Notes
 

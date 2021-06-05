@@ -14,7 +14,8 @@ Medium
 
 ## Instructions
 
-Given a table `tree`, **id** is identifier of the tree node and **p_id** is its parent node's **id**.
+Given a table `tree`, **id** is identifier of the tree node and **p_id** is its 
+parent node's **id**.
 
 ```
 +----+------+
@@ -33,7 +34,8 @@ Each node in the tree can be one of three types:
 - Root: if the node is the root of the tree.
 - Inner: if the node is neither a leaf node nor a root node.
 
-Write a query to print the node id and the type of the node. Sort your output by the node id. The result of the above sample is:
+Write a query to print the node id and the type of the node. Sort your output 
+by the node id. The result of the above sample is:
 
 ```
 +----+------+
@@ -47,7 +49,8 @@ Write a query to print the node id and the type of the node. Sort your output by
 +----+------+
 ```
 
-**Note**: If there is only one node on the tree, you only need to output its root attributes.
+**Note**: If there is only one node on the tree, you only need to output its 
+root attributes.
 
 ## Solution
 
@@ -64,7 +67,8 @@ FROM tree;
 
 ## Explanation
 
-The goal is to count distinct ids. Therefore, we need to union two id columns together.
+The goal is to count distinct ids. Therefore, we need to union two id columns 
+together.
 
 ## Note
 

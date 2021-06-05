@@ -19,7 +19,8 @@ In facebook, there is a `follow` table with two columns:
 - **followee**
 - **follower**
 
-Please write a SQL query to get the amount of each followee's folloer if he/she has one.
+Please write a SQL query to get the amount of each followee's folloer if he/she 
+has one.
 
 For example:
 
@@ -47,7 +48,8 @@ should output:
 
 **Explanation**:
 
-Both B and D exist in the follower list, when as a followee, B's follower is C and D, and D's follower is E. A does not exist in follower list.
+Both B and D exist in the follower list, when as a followee, B's follower is C 
+and D, and D's follower is E. A does not exist in follower list.
 
 **Note**:
 
@@ -69,7 +71,9 @@ ORDER BY follower ASC;
 
 ## Explanation
 
-First, exclude those followees that do not exist in the follower list. Then, because a followee cannot follow himself/herself, we can just count the number of followers per followee.
+First, exclude those followees that do not exist in the follower list. Then, 
+because a followee cannot follow himself/herself, we can just count the number 
+of followers per followee.
 
 Note that there might be duplicate records.
 

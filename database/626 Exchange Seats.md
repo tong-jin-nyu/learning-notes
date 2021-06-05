@@ -14,7 +14,8 @@ Medium
 
 ## Instructions
 
-Mary is a teacher in a middle school and she has a table `seat` storing students' names and their corresponding seat ids.
+Mary is a teacher in a middle school and she has a table `seat` storing 
+students' names and their corresponding seat ids.
 
 The column `id` is continuous increment.
 
@@ -61,7 +62,9 @@ ORDER BY id;
 
 ## Explanation
 
-The best way to change seats for adjacent students is to swap odds with evens. Note that we need to skip the last students for odd number of students. This is because the last student in an odd row does not need to change seat.
+The best way to change seats for adjacent students is to swap odds with evens. 
+Note that we need to skip the last students for odd number of students. 
+This is because the last student in an odd row does not need to change seat.
 
 ## Note
 
