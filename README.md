@@ -30,6 +30,8 @@ Problem solving and practicing on [LeetCode](https://leetcode.com/) and [力扣]
 - [580 Count Student Number in Departments](database/580%20Count%20Student%20Number%20in%20Departments.md) - Right join
 - [601 Human Traffic of Stadium](database/601%20Human%20Traffic%20of%20Stadium)
 - [602 Friend Requests II: Who Has the Most Friends](database/602%20Friend%20Requests%20II%20Who%20Has%20the%20Most%20Friends.md)
+- [1068 Product Sales Analysis I](database/1068%20Product%20Sales%20Analysis%20I.md) - `JOIN`
+- [1075 Project Employees I](database/1075%20Project%20Employees%20I.md) - `JOIN`
 
 ### CTE
 
@@ -42,6 +44,7 @@ Problem solving and practicing on [LeetCode](https://leetcode.com/) and [力扣]
 - [614 Second Degree Follower](database/614%20Second%20Degree%20Follower.md) - CTE as part of `WHERE`
 - [615 Average Salary Departments vs Company](database/615%20Average%20Salary%20Departments%20vs%20Company.md) - CTE as part of the main table
 - [619 Biggest Single Number](database/619%20Biggest%20Single%20Number.md) - CTE as part of the main table
+- [1070 Product Sales Analysis III](database/1070%20Product%20Sales%20Analysis%20III.md) - CTE as part of the main table
   
 ### Window function
 
@@ -56,6 +59,8 @@ Problem solving and practicing on [LeetCode](https://leetcode.com/) and [力扣]
 - [579 Find Cumulative Salary of an Employee](database/579%20Find%20Cumulative%20Salary%20of%20an%20Employee.md) - `SUM()`, `OVER()`, `RANK()`
 - [585 Investments in 2016](database/585%20Investments%20in%202016.md) - `PARTITION BY`
 - [618 Students Report by Geography](database/618%20Students%20Report%20by%20Geography.md) - `ROW_NUMBER()`
+- [1076 Project Employees II](database/1076%20Project%20Employees%20II.md) - `RANK()`
+- [1077 Project Employees III](database/1077%20Project%20Employees%20III.md) - `RANK()`
 
 ### Sort and filter
 
@@ -74,7 +79,8 @@ Problem solving and practicing on [LeetCode](https://leetcode.com/) and [力扣]
 - [626 Exchange Seats](database/626%20Exchange%20Seats.md) - `CASE`
 - [1179 Reformat Department Table](database/1179%20Reformat%20Department%20Table.md) - `CASE`
 - [1045 Customers Who Bought All Products](database/1045%20Customers%20Who%20Bought%20All%20Products.md) - `HAVING`, `GROUP BY`
-
+- [1050 Actors and Directors Who Cooperated At Least Three Times](database/1050%20Actors%20and%20Directors%20Who%20Cooperated%20At%20Least%20Three%20Times.md) - `HAVING`, `GROUP BY`
+- [1069 Product Sales Analysis II](database/1069%20Product%20Sales%20Analysis%20II.md) - `GROUP BY`
 
 ### Other
 
