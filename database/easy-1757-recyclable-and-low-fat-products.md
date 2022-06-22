@@ -1,22 +1,16 @@
-# LeetCode Notes - SQL
-
-## 1757 Recyclable and Low Fat Products
-
-Created on: 03/08/2021
-
-Modified on: 03/08/2021
-
----
-
-### Difficulty
+# 1757. Recyclable and Low Fat Products
 
 Easy
 
-## Instructions
+Created on: 3/8/2021
+
+Modified on: 6/21/2022
+
+---
 
 Table: `Products`
 
-```
+``` text
 +-------------+---------+
 | Column Name | Type    |
 +-------------+---------+
@@ -33,11 +27,11 @@ Write an SQL query to find the ids of products that are both low fat and recycla
 
 Return the result table in any order.
 
-## Solution (MySQL)
+---
 
 ``` sql
 SELECT product_id
 FROM Products
-WHERE low_fats = 'Y' AND
-recyclable = 'Y';
+WHERE low_fats = 'Y' 
+  AND recyclable = 'Y';
 ```
