@@ -1,22 +1,16 @@
-# LeetCode Notes - SQL
-
-## 1350 Students With Invalid Departments
-
-Created on: 03/10/2021
-
-Modified on: 03/10/2021
-
----
-
-### Difficulty
+# 1350 Students With Invalid Departments
 
 Easy
 
-## Instructions
+Created on: 3/10/2021
+
+Modified on: 6/21/2022
+
+---
 
 Table: `Departments`
 
-```
+``` text
 +---------------+---------+
 | Column Name   | Type    |
 +---------------+---------+
@@ -29,7 +23,7 @@ The table has information about the id of each department of a university.
 
 Table: `Students`
 
-```
+``` text
 +---------------+---------+
 | Column Name   | Type    |
 +---------------+---------+
@@ -45,10 +39,11 @@ Write an SQL query to find the id and the name of all students who are enrolled 
 
 Return the result table in any order.
 
-## Solution (MySQL)
+---
 
 ``` sql
 SELECT id, name
 FROM Students
-WHERE department_id NOT IN (SELECT id FROM Departments);
+WHERE department_id 
+NOT IN (SELECT id FROM Departments);
 ```
