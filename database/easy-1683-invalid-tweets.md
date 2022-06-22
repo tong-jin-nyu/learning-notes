@@ -1,22 +1,16 @@
-# LeetCode Notes - SQL
-
-## 1683 Invalid Tweets
-
-Created on: 03/09/2021
-
-Modified on: 03/09/2021
-
----
-
-### Difficulty
+# 1683 Invalid Tweets
 
 Easy
 
-## Instructions
+Created on: 3/9/2021
+
+Modified on: 6/21/2022
+
+---
 
 Table: `Tweets`
 
-```
+``` text
 +----------------+---------+
 | Column Name    | Type    |
 +----------------+---------+
@@ -31,7 +25,7 @@ Write an SQL query to find the IDs of the invalid tweets. The tweet is invalid i
 
 Return the result table in any order.
 
-## Solution (MySQL)
+---
 
 ``` sql
 SELECT tweet_id
