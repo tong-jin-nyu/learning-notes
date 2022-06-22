@@ -1,12 +1,12 @@
-created on: 05/26/2020
+# Learning Notes
 
-updated on: 11/06/2021
+created on: 5/26/2020
 
-# LeetCode Notes
+updated on: 6/21/2022
 
 ## Description
 
-This is my personal workspace for learning programming skills on [LeetCode](https://leetcode.com/) and [力扣](https://leetcode-cn.com/). I use this repo to keep records of my solutions. The languages I use include Python 3 and SQL. Check out the [wiki page](https://github.com/tong-jin-nyu/leetcode-notes/wiki) to learn more.
+Tracks progress on coding exercises. Check out the [wiki page](https://github.com/tong-jin-nyu/leetcode-notes/wiki) to learn more.
 
 ## Table of Contents
 
