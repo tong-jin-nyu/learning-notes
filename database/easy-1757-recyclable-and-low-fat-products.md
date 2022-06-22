@@ -1,4 +1,4 @@
-# 1757. Recyclable and Low Fat Products
+# 1757 Recyclable and Low Fat Products
 
 Easy
 
