@@ -1,22 +1,16 @@
-# LeetCode Notes - SQL
-
-## 1378 Replace Employee ID With The Unique Identifier
-
-Created on: 03/09/2021
-
-Modified on: 03/09/2021
-
----
-
-### Difficulty
+# 1378 Replace Employee ID With The Unique Identifier
 
 Easy
 
-## Instructions
+Created on: 3/9/2021
+
+Modified on: 6/21/2022
+
+---
 
 Table: `Employees`
 
-```
+``` text
 +---------------+---------+
 | Column Name   | Type    |
 +---------------+---------+
@@ -29,7 +23,7 @@ Each row of this table contains the id and the name of an employee in a company.
 
 Table: `EmployeeUNI`
 
-```
+``` text
 +---------------+---------+
 | Column Name   | Type    |
 +---------------+---------+
@@ -44,11 +38,10 @@ Write an SQL query to show the unique ID of each user, If a user doesn't have
 
 Return the result table in any order.
 
-## Solution (MySQL)
+---
 
 ``` sql
-SELECT
-    unique_id, name
+SELECT unique_id, name
 FROM Employees AS e
 LEFT JOIN EmployeeUNI AS uni
 ON e.id = uni.id;
