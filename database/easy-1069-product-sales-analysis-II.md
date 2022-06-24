@@ -1,22 +1,16 @@
-# LeetCode Notes - SQL
-
-## 1069. Product Sales Analysis II
-
-Created on: 03/10/2021
-
-Modified on: 03/10/2021
-
----
-
-### Difficulty
+# 1069 Product Sales Analysis II
 
 Easy
 
-## Instructions
+Created on: 3/10/2021
+
+Modified on: 6/23/2022
+
+---
 
 Table: `Sales`
 
-```
+``` text
 +-------------+------+
 | Column Name | Type |
 +-------------+------+
@@ -33,7 +27,7 @@ Note that the price is per unit.
 
 Write an SQL query that reports the total quantity sold for every product id.
 
-## Solution (MySQL)
+---
 
 ``` sql
 SELECT 
@@ -42,3 +36,5 @@ SELECT
 FROM Sales
 GROUP BY product_id;
 ```
+
+---
