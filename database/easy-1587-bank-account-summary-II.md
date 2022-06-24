@@ -1,22 +1,16 @@
-# LeetCode Notes - SQL
-
-## 1587. Bank Account Summary II
-
-Created on: 03/10/2021
-
-Modified on: 03/10/2021
-
----
-
-### Difficulty
+# 1587 Bank Account Summary II
 
 Easy
 
-## Instructions
+Created on: 3/10/2021
+
+Modified on: 6/23/2022
+
+---
 
 Table: `Users`
 
-```
+``` text
 +---------------+---------+
 | Column Name   | Type    |
 +---------------+---------+
@@ -29,7 +23,7 @@ Each row of this table contains the account number of each user in the bank.
 
 Table: `Transactions`
 
-```
+``` text
 +---------------+---------+
 | Column Name   | Type    |
 +---------------+---------+
@@ -40,7 +34,7 @@ Table: `Transactions`
 +---------------+---------+
 trans_id is the primary key for this table.
 Each row of this table contains all changes made to all accounts.
-amount is positive if the user received money and negative if they transferred money.
+Amount is positive if the user received money and negative if they transferred money.
 All accounts start with a balance 0.
 ```
 
@@ -48,15 +42,15 @@ Write an SQL query to report the name and balance of users with a balance higher
 
 Return the result table in any order.
 
-## Solution (MySQL)
+---
 
 ``` sql
-SELECT *
-FROM
-    (SELECT name, SUM(amount) AS balance
-    FROM Users AS u
-    JOIN Transactions AS t
-    ON u.account = t.account
-    GROUP BY t.account) AS CTE
-WHERE CTE.balance > 10000;
+SELECT u.name, SUM(t.amount) AS balance
+FROM Users AS u
+JOIN Transactions AS t
+ON u.account = t.account
+GROUP BY t.account
+HAVING SUM(t.amount) > 10000;
 ```
+
+---
