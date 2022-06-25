@@ -1,21 +1,14 @@
-# LeetCode Notes - SQL
-
-## 181 Employees Earning More Than Their Managers
-
-Created on: 01/29/2021
-
-Modified on: 03/22/2021
-
----
-
-### Difficulty
+# 181 Employees Earning More Than Their Managers
 
 Easy
 
-## Instructions
+Created on: 1/29/2021
 
-The `Employee` table holds all employees including their managers. Every 
-employee has an Id, and their is also a column for the manager Id.
+Modified on: 6/25/2022
+
+---
+
+The `Employee` table holds all employees including their managers. Every employee has an Id, and their is also a column for the manager Id.
 
 | Id | Name  | Salary | ManagerId |
 | -- | ----- | ------ | --------- |
@@ -24,15 +17,13 @@ employee has an Id, and their is also a column for the manager Id.
 | 3  | Sam   | 60000  | NULL      |
 | 4  | Max   | 90000  | NULL      |
 
-Given the `Employee` table, write a SQL query that finds out employees who 
-earn more than their managers. For the above table, Joe is the only employee 
-who earns more than his manager.
+Given the `Employee` table, write a SQL query that finds out employees who earn more than their managers. For the above table, Joe is the only employee who earns more than his manager.
 
 | Employee |
 | -------- |
 | Joe      |
 
-## Solution
+---
 
 ``` sql
 SELECT e.Name AS Employee
@@ -50,6 +41,4 @@ WHERE e.Salary > m.Salary;
 4. value because of NULL.
 5. Filter to rows which the employee's salary is higher than manager's salary.
 
-## Note
-
-- Left join
+---

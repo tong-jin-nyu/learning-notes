@@ -1,18 +1,12 @@
-# LeetCode Notes - SQL
-
-## 180 Consecutive Numbers
-
-Created on: 01/30/2021
-
-Modified on: 03/22/2021
-
----
-
-### Difficulty
+# 180 Consecutive Numbers
 
 Medium
 
-## Instructions
+Created on: 1/30/2021
+
+Modified on: 6/25/2022
+
+---
 
 Table: `Logs`
 
@@ -23,14 +17,13 @@ Table: `Logs`
 
 `id is the primary key for this table.`
 
-Write a SQL query to find all numbers that appear at least three times 
-consecutively. 
+Write a SQL query to find all numbers that appear at least three times consecutively.
 
 Return the result table in **any order**.
 
-The query result format is in the following example: 
+The query result format is in the following example:
 
-Logs table: 
+Table `logs`
 
 | Id | Num |
 | -- | --- |
@@ -50,8 +43,11 @@ Result table:
 
 `1 is the only number that appears consecutively for at least three times.`
 
-## Solution 1
-```sql
+---
+
+MySQL
+
+``` sql
 SELECT DISTINCT
     l1.Num AS ConsecutiveNums
 FROM 
@@ -65,12 +61,14 @@ WHERE
     AND l2.Num = l3.Num
 ```
 
-Self join table three times to include rows with three consecutive repeats. 
+Self join table three times to include rows with three consecutive repeats.
 Use `DISTINCT` to get rid of duplicates.
 
-## Solution 2
+---
 
-``` sql
+PostgreSQL
+
+``` postgresql
 WITH CTE AS (
     SELECT Num,
     LEAD(Num) OVER(ORDER BY Id) AS lead,
@@ -82,8 +80,9 @@ FROM CTE
 WHERE Num = lead AND Num = lag;
 ```
 
-Use window function `LEAD()` and `LAG()` to create two columns showing the 
-lead and lag of a row. Filter to rows with same values as their leads and lags.
+Use window function `LEAD()` and `LAG()` to create two columns showing the lead and lag of a row. Filter to rows with same values as their leads and lags.
+
+---
 
 ## Note
 
