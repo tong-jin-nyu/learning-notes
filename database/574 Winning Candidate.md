@@ -1,22 +1,16 @@
-# LeetCode Notes - SQL
-
-## 574 Winning Candidate
-
-Created on: 03/12/2021
-
-Modified on: 03/23/2021
-
----
-
-### Difficulty
+# 574 Winning Candidate
 
 Medium
 
-## Instructions
+Created on: 3/12/2021
+
+Modified on: 6/25/2022
+
+---
 
 Table `Candidate`
 
-```
+``` text
 +-----+---------+
 | id  | Name    |
 +-----+---------+
@@ -30,7 +24,7 @@ Table `Candidate`
 
 Table `Vote`
 
-```
+``` text
 +-----+--------------+
 | id  | CandidateId  |
 +-----+--------------+
@@ -45,10 +39,9 @@ id is the auto-increment primary key,
 CandidateId is the id appeared in Candidate table.
 ```
 
-Write a query to find the name of the winning candidate, the above example will 
-return the winner `B`.
+Write a query to find the name of the winning candidate, the above example will return the winner `B`.
 
-```
+``` text
 +------+
 | Name |
 +------+
@@ -56,7 +49,7 @@ return the winner `B`.
 +------+
 ```
 
-## Solution
+---
 
 ``` sql
 SELECT name
@@ -71,10 +64,10 @@ WHERE id =
 );
 ```
 
-For each unique candidate ID, find the number of wins. Then, sort in descending 
-order and get the first row. Finally, link the candidate name with the winner 
-ID.
+---
 
 ## Note
+
+For each unique candidate ID, find the number of wins. Then, sort in descending order and get the first row. Finally, link the candidate name with the winner ID.
 
 - CTE as part of the `WHERE` clause

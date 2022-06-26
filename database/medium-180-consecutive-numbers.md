@@ -69,15 +69,16 @@ Use `DISTINCT` to get rid of duplicates.
 PostgreSQL
 
 ``` postgresql
-WITH CTE AS (
+WITH t AS (
     SELECT Num,
-    LEAD(Num) OVER(ORDER BY Id) AS lead,
-    LAG(Num) OVER(ORDER BY Id) AS lag
+    LEAD(Num) OVER(ORDER BY Id) AS lead_num,
+    LAG(Num) OVER(ORDER BY Id) AS lag_num
     FROM Logs
 )
 SELECT DISTINCT Num AS ConsecutiveNums
-FROM CTE
-WHERE Num = lead AND Num = lag;
+FROM t
+WHERE Num = lead_num
+  AND Num = lag_num;
 ```
 
 Use window function `LEAD()` and `LAG()` to create two columns showing the lead and lag of a row. Filter to rows with same values as their leads and lags.

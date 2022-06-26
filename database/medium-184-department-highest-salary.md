@@ -62,6 +62,8 @@ WHERE rank = 1;
 
 First, join table together. Then, create a new column, `rank`, using the window function `RANK()`. Finally, select the row where rank equals 1.
 
+---
+
 ## Note
 
 - Window function
