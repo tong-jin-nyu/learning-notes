@@ -1,22 +1,14 @@
-# LeetCode Notes - SQL
-
-## 184 Department Highest Salary
-
-Created on: 01/30/2021
-
-Modified on: 03/22/2021
-
----
-
-### Difficulty
+# 184 Department Highest Salary
 
 Medium
 
-## Instructions
+Created on: 1/30/2021
 
-The `Employee` table holds all employees. Every employee has an id, a salary, 
-and ther is also a column for the department id.
+Modified on: 6/25/2022
 
+---
+
+The `Employee` table holds all employees. Every employee has an id, a salary, and ther is also a column for the department id.
 
 | Id | Name  | Salary | DepartmentId |
 | -- | ----- | ------ | ------------ |
@@ -26,16 +18,14 @@ and ther is also a column for the department id.
 | 4  | Sam   | 60000  | 2            |
 | 5  | Max   | 90000  | 1            |
 
-The `Department` table holds all departments of the company.
+The `Department` table holds all departments of the company
 
 | Id | Name   |
 | -- | ------ |
 | 1  | IT     |
 | 2  | Sales  |
 
-Write a SQL query to find employees who have the highest salary in each of the 
-departments. For the above tables, your SQL query should return the following 
-rows (order of rows does not matter).
+Write a SQL query to find employees who have the highest salary in each of the departments. For the above tables, your SQL query should return the following rows (order of rows does not matter).
 
 | Department | Employee | Salary |
 | ---------- | -------- | ------ |
@@ -45,13 +35,12 @@ rows (order of rows does not matter).
 
 **Explanation:**
 
-Max and Jim both have the highest salary in the IT department and Henry has 
-the highest salary in the Sales department.
+Max and Jim both have the highest salary in the IT department and Henry has the highest salary in the Sales department.
 
-## Solution (MS SQL)
+---
 
-``` sql
-WITH CTE AS (
+``` postgresql
+WITH t AS (
     SELECT 
         d.Name AS Department,
         e.Name AS Employee,
@@ -60,18 +49,18 @@ WITH CTE AS (
     FROM Employee AS e
     LEFT JOIN Department AS d
     ON e.DepartmentId = d.Id
-    WHERE d.Name IS NOT NULL;
+    -- Exclude employees who do not belong to any department.
+    WHERE d.Name IS NOT NULL; 
 )
 SELECT 
     Department,
     Employee,
     Salary
-FROM CTE
+FROM t
 WHERE rank = 1;
 ```
 
-First, join table together. Then, create a new column, `rank`, using the window 
-function `RANK()`. Finally, select the row where rank equals 1.
+First, join table together. Then, create a new column, `rank`, using the window function `RANK()`. Finally, select the row where rank equals 1.
 
 ## Note
 
