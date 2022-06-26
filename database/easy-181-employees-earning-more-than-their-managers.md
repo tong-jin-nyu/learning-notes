@@ -35,10 +35,4 @@ ON e.ManagerId = m.Id
 WHERE e.Salary > m.Salary;
 ```
 
-1. Managers are those whose `ManagerId` is NULL.
-2. Use left join to link manager salaries with employees' salaries.
-3. Because of left join, managers will not be linked with a manager salary 
-4. value because of NULL.
-5. Filter to rows which the employee's salary is higher than manager's salary.
-
 ---

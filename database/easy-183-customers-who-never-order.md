@@ -1,22 +1,14 @@
-# LeetCode Notes - SQL
-
-## 183 Customers Who Never Order
-
-Created on: 01/29/2021
-
-Modified on: 03/22/2021
-
----
-
-### Difficulty
+# Customers Who Never Order
 
 Easy
 
-## Instructions
+Created on: 1/29/2021
 
-Suppose that a website contains two tables, the `Customers` table and the 
-`Orders` table. Write a SQL query to find all customers who never order 
-anything.
+Modified on: 6/25/2022
+
+---
+
+Suppose that a website contains two tables, the `Customers` table and the `Orders` table. Write a SQL query to find all customers who never order anything.
 
 Table: `Customers`
 
@@ -36,14 +28,14 @@ Table: `Orders`
 | 1  | 3          |
 | 2  | 1          |
 
-Using the above tables as example, return the following: 
+Using the above tables as example, return the following:
 
 | Customers |
 | --------- |
 | Henry     |
 | Max       |
 
-## Solution
+---
 
 ``` sql
 SELECT Name as Customers
@@ -54,6 +46,4 @@ WHERE Id NOT IN (
 );
 ```
 
-## Note
-
-- CTE as part of the `WHERE` clause
+---
