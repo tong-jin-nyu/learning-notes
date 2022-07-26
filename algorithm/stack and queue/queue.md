@@ -8,10 +8,12 @@ Modified on: 7/25/2022
 
 ---
 
-FIFO (First-in First-out)
+Queue: FIFO (First-in First-out)
+
+Design a simple queue:
 
 ``` python
-class Queue():
+class SimpleQueue():
     def __init__(self):
         self.__list = list()
     def enQueue(self, item):
@@ -29,4 +31,14 @@ class Queue():
     def size(self):
         '''Return the length of queue'''
         return len(self.__list)
+```
+
+Design a circular queue:
+
+``` python
+class CircularQueue():
+    def __init__(self, capacity: int):
+        self.size = 0
+        self.capacity = capacity
+        self.head = 0
 ```
