@@ -4,7 +4,7 @@
 
 Created on: 7/25/2022
 
-Modified on: 7/25/2022
+Modified on: 7/27/2022
 
 ---
 
@@ -13,7 +13,7 @@ Queue: FIFO (First-in First-out)
 Design a simple queue:
 
 ``` python
-class MySimpleQueue():
+class SimpleQueue():
     def __init__(self):
         self.__list = list()
     def enQueue(self, item):
@@ -74,4 +74,26 @@ class MyCircularQueue():
 
     def isFull(self) -> bool:
         return self.size == self.capacity
+```
+
+---
+
+Design a minimum stack:
+
+``` python
+class MinStack():
+    def __init__(self):
+        self.stack = list()
+
+    def push(self, val: int) -> None:
+        self.stack.append(val)
+
+    def pop(self) -> None:
+        self.stack.pop()
+
+    def top(self) -> int:
+        return self.stack[-1]
+
+    def getMin(self) -> int:
+        return min(self.stack)
 ```
