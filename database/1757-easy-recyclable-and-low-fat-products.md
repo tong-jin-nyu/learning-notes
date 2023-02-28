@@ -4,7 +4,7 @@ Easy
 
 Created on: 3/8/2021
 
-Modified on: 6/21/2022
+Modified on: 2/28/2023
 
 ---
 
@@ -33,5 +33,5 @@ Return the result table in any order.
 SELECT product_id
 FROM Products
 WHERE low_fats = 'Y' 
-  AND recyclable = 'Y';
+  AND recyclable = 'Y'
 ```
