@@ -1,20 +1,30 @@
-# LeetCode Notes - SQL
-
-## 595 Big Countries
-
-Created on: 02/01/2021
-
-Modified on: 03/22/2021
-
----
-
-### Difficulty
+# 595 Big Countries
 
 Easy
 
-## Instructions
+https://leetcode.cn/problems/big-countries/
 
-There is a table `World`
+Created on: 2/1/2021
+
+Modified on: 2/28/2023
+
+---
+
+Table: `World`
+
+```
++-------------+---------+
+| Column Name | Type    |
++-------------+---------+
+| name        | varchar |
+| continent   | varchar |
+| area        | int     |
+| population  | int     |
+| gdp         | int     |
++-------------+---------+
+name is the primary key column for this table.
+Each row of this table gives information about the name of a country, the continent to which it belongs, its area, the population, and its GDP value.
+```
 
 ```
 +-----------------+------------+------------+--------------+---------------+
@@ -44,15 +54,14 @@ For example, according to the above table, we should output:
 +--------------+-------------+--------------+
 ```
 
-## Solution
+---
 
-```sql
+``` sql
 SELECT
     name,
     population,
     area
 FROM World
-WHERE area > 3000000 OR population > 25000000;
+WHERE 1=1
+  AND (population >= 25000000 OR area >= 3000000)
 ```
-
-Too simple. Nothing to say.
