@@ -2,13 +2,16 @@
 
 Easy
 
+https://leetcode.cn/problems/customers-who-never-order/
+
 Created on: 1/29/2021
 
-Modified on: 6/25/2022
+Modified on: 2/28/2023
 
 ---
 
-Suppose that a website contains two tables, the `Customers` table and the `Orders` table. Write a SQL query to find all customers who never order anything.
+Suppose that a website contains two tables, the `Customers` table and the `Orders` table. 
+Write a SQL query to find all customers who never order anything.
 
 Table: `Customers`
 
@@ -38,12 +41,21 @@ Using the above tables as example, return the following:
 ---
 
 ``` sql
-SELECT Name as Customers
+SELECT name AS Customers
 FROM Customers
-WHERE Id NOT IN (
-    SELECT CustomerId
+WHERE id NOT IN (
+    SELECT customerId 
     FROM Orders
-);
+)
+```
+
+``` sql
+SELECT name AS Customers
+FROM CUstomers AS c
+LEFT JOIN Orders AS o ON c.Id = o.CustomerId
+WHERE o.Id IS NULL
 ```
 
 ---
+
+Both in-line table and LEFT JOIN work.
