@@ -1,18 +1,14 @@
-# LeetCode Notes - SQL
-
-## 627. Swap Salary
-
-Created on: 03/08/2021
-
-Modified on: 06/04/2021
-
----
-
-### Difficulty
+# 627 Swap Salary
 
 Easy
 
-## Instructions
+https://leetcode.cn/problems/swap-salary/
+
+Created on: 3/8/2021
+
+Modified on: 3/1/2023
+
+---
 
 Table: Salary
 
