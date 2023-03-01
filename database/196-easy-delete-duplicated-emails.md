@@ -1,18 +1,14 @@
-# LeetCode Notes - SQL
-
-## 196 Delete Duplicate Emails
-
-Created on: 01/31/2021
-
-Modified on: 03/22/2021
-
----
-
-### Difficulty
+# 196 Delete Duplicate Emails
 
 Easy
 
-## Instructions
+https://leetcode.cn/problems/delete-duplicate-emails/
+
+Created on: 1/31/2021
+
+Modified on: 3/1/2023
+
+---
 
 Write a SQL query to delete all duplicate email entries in a table named 
 `Person`, keeping only unique emails based on its smallest id.
@@ -38,17 +34,18 @@ Note:
 Your output is the whole `Person` table after executing your sql. Use delete 
 statement.
 
-## Solution (MS SQL)
+---
 
 ``` sql
 DELETE p1
-FROM Person AS p1,
-Person AS p2
-WHERE p1.Email = p2.Email AND p1.Id > p2.Id
+FROM person AS p1, person AS p2
+WHERE 1=1
+  AND p1.email = p2.email
+  AND p1.id > p2.id
 ```
 
 Use self join to keep identical rows. Filter to smaller IDs.
 
-## Note
+---
 
 - Self join
