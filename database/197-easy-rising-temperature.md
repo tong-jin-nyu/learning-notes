@@ -1,18 +1,14 @@
-# LeetCode Notes - SQL
+# 197 Rising Temperature
 
-## 197 Rising Temperature
+Created on: 2/1/2021
 
-Created on: 02/01/2021
-
-Modified on: 03/22/2021
-
----
-
-### Difficulty
+Modified on: 3/2/2023
 
 Easy
 
-## Instructions
+https://leetcode.cn/problems/rising-temperature/
+
+---
 
 Table: `Weather`
 
@@ -51,7 +47,9 @@ In 2015-01-02, temperature was higher than the previous day (10 -> 25).
 
 In 2015-01-04, temperature was higher than the previous day (20 -> 30).
 
-## Solution 1
+---
+
+## Solution 1 (MS SQL Server)
 
 ``` sql
 SELECT w2.id AS Id
@@ -63,7 +61,17 @@ WHERE w1.Temperature < w2.Temperature;
 
 Apply `DATEDIFF` to link days with their previous ones.
 
-## Solution 2
+## Solution 2 (MySQL)
+
+``` sql
+SELECT w2.id
+FROM weather as w1
+LEFT JOIN weather as w2
+ON DATEDIFF(w2.recordDate, w1.recordDate) = 1
+WHERE w1.temperature < w2.temperature
+```
+
+## Solution 3
 
 ``` sql
 WITH cte_sorted AS
