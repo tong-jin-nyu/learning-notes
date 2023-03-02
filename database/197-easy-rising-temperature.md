@@ -74,20 +74,18 @@ WHERE w1.temperature < w2.temperature
 ## Solution 3
 
 ``` sql
-WITH cte_sorted AS
-(
-    SELECT *,
-        ROW_NUMBER() OVER(ORDER BY recordDate ASC) AS row
-    FROM Weather
-)
 SELECT id
 FROM (
-    SELECT *,
-        LAG(Temperature, 1) OVER(ORDER BY row) AS temp_before,
-        LAG(RecordDate, 1) OVER(ORDER BY row) AS date_before
-    FROM cte_sorted) AS temp
-WHERE DATEDIFF(day, date_before, RecordDate) = 1
-    AND temp_before < Temperature;
+    SELECT
+        id,
+        recordDate,
+        temperature,
+        LAG(recordDate, 1) OVER(ORDER BY recordDate) AS last_date,
+        LAG(temperature, 1) OVER(ORDER BY recordDate) AS last_temperature
+    FROM Weather) AS a
+WHERE 1=1 
+  AND DATEDIFF(recordDate, last_date) = 1
+  AND temperature > last_temperature
 ```
 
 Apply `ROW_NUMBER()` as indices. Apply `LAG()` to select yesterday.
