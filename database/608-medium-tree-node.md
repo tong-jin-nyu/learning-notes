@@ -1,21 +1,17 @@
-# LeetCode Notes - SQL
-
-## 608 Tree Node
-
-Created on: 05/27/2021
-
-Modified on: 05/27/2021
-
----
-
-### Difficulty
+# 608 Tree Node
 
 Medium
 
-## Instructions
+https://leetcode.cn/problems/tree-node/
 
-Given a table `tree`, **id** is identifier of the tree node and **p_id** is its 
-parent node's **id**.
+Created on: 5/27/2021
+
+Modified on: 3/12/2023
+
+---
+
+Given a table `Tree`, `id` is identifier of the tree node and `p_id` is its 
+parent node's id.
 
 ```
 +----+------+
@@ -52,25 +48,32 @@ by the node id. The result of the above sample is:
 **Note**: If there is only one node on the tree, you only need to output its 
 root attributes.
 
-## Solution
+---
 
-```sql
+``` sql
 SELECT 
-    id AS Id, 
+    id, 
     CASE
         WHEN p_id IS NULL THEN 'Root'
-        WHEN id IN (SELECT DISTINCT(p_id) FROM tree) THEN 'Inner'
+        WHEN id IN (SELECT DISTINCT p_id FROM Tree) THEN 'Inner'
         ELSE 'Leaf'
-    END AS Type
-FROM tree;
+    END AS type
+FROM Tree;
 ```
 
-## Explanation
+``` sql
+SELECT
+    id,
+    IF(p_id IS NULL,
+        'Root',
+        IF(id IN (SELECT DISTINCT p_id FROM Tree),
+            'Inner',
+            'Leaf')) AS type
+FROM Tree
+```
 
-The goal is to count distinct ids. Therefore, we need to union two id columns 
-together.
+---
 
-## Note
-
-- `CASE`
+- `CASE WHEN`
+- `IF`
 
