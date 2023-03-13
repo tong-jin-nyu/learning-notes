@@ -2,6 +2,8 @@
 
 Easy
 
+https://leetcode.cn/problems/rearrange-products-table/
+
 Created on: 3/12/2023
 
 Modified on: 3/12/2023
