@@ -4,7 +4,7 @@ Easy
 
 Created on: 1/28/2021
 
-Modified on: 6/25/2022
+Modified on: 3/12/2023
 
 ---
 
@@ -27,9 +27,9 @@ For example, given the above Employee table, the query should return `200` as th
 ## Option 1
 
 ``` sql
-SELECT MAX(Salary) AS SecondHighestSalary
+SELECT MAX(salary) AS SecondHighestSalary
 FROM Employee
-WHERE Salary != (SELECT MAX(Salary) FROM Employee)
+WHERE salary <> (SELECT MAX(salary) FROM Employee)
 ```
 
 Apply CTE as part of the `WHERE` clause. In the CTE, compute the highest salary. Then, selecting the maximum salary that is not equal to the highest salary gets the second highest salary.
