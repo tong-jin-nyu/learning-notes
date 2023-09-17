@@ -2,11 +2,12 @@
 
 created on: 5/26/2020
 
-updated on: 6/21/2022
+updated on: 9/17/2023
 
 ## Description
 
-Tracks progress on coding exercises. Check out the [wiki page](https://github.com/tong-jin-nyu/leetcode-notes/wiki) to learn more.
+My learning notes for algorithm and SQL training. 
+Check out the [wiki page](https://github.com/tong-jin-nyu/leetcode-notes/wiki) to learn more.
 
 ## Table of Contents
 
