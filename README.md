@@ -2,7 +2,7 @@
 
 created on: 5/26/2020
 
-updated on: 9/17/2023
+updated on: 9/4/2024
 
 ## Description
 
@@ -12,5 +12,7 @@ Check out the [wiki page](https://github.com/tong-jin-nyu/leetcode-notes/wiki) t
 ## Table of Contents
 
 - [Algorithm](https://github.com/tong-jin-nyu/leetcode-notes/tree/master/algorithm)
+  - [array and string](https://github.com/tong-jin-nyu/learning-notes/tree/master/algorithm/array%20and%20string)
+  - [binary tree](https://github.com/tong-jin-nyu/learning-notes/tree/master/algorithm/binary%20tree)
 - [Analytics](https://github.com/tong-jin-nyu/leetcode-notes/tree/master/analytics)
 - [Database](https://github.com/tong-jin-nyu/leetcode-notes/tree/master/database)
